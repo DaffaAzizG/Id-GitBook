@@ -6,7 +6,8 @@ icon: gauge-min
 
 Menampilkan semua informasi terkait dengan menu Pesan yang dirangkum secara lebih singkat dan beberapa grafik informasi tentang agen.
 
-{% embed url="https://youtu.be/noHtYBEBoSM" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/noHtYBEBoSM" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Dasbor Pesan.png" alt=""><figcaption></figcaption></figure>
 

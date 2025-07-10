@@ -6,7 +6,8 @@ icon: key
 
 Fitur ini dapat membantu anda jika anda lupa password saat login website id.nobox.ai caranya sebagai berikut :
 
-{% embed url="https://youtu.be/jdv8A8J8cdk" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/jdv8A8J8cdk" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 1\. Klik **\[Lupa Password]** pada halaman login **➔** isi alamat email Anda dan ceklis recaptcha.
 

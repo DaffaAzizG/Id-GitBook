@@ -6,7 +6,9 @@ icon: calculator
 
 Transaksi merupakan salah satu menu Nobox.Ai yang digunakan untuk mencatat transaksi terkait pembayaran dengan penawaran.
 
-{% embed url="https://youtu.be/X1w93uAPn-8" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/X1w93uAPn-8" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Transaksi.png" alt=""><figcaption></figcaption></figure>
 

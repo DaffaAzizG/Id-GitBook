@@ -6,7 +6,9 @@ icon: money-check-dollar-pen
 
 Metode Pembayaran merupakan salah satu menu pada NoBox yang digunakan untuk master data metode pembayaran.
 
-{% embed url="https://youtu.be/SSZTrIS5ZKA" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/SSZTrIS5ZKA" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Metode Pembayaran.png" alt=""><figcaption></figcaption></figure>
 

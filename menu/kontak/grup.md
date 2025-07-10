@@ -6,7 +6,9 @@ icon: users-rectangle
 
 Grup adalah salah satu menu pada Nobox.Ai yang digunakan untuk informasi grup seperti Nama, Deskripsi dari akun yang terkait.
 
-{% embed url="https://youtu.be/_X6yHUwetxw" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/_X6yHUwetxw" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/1. Tampilan Grup.png" alt=""><figcaption></figcaption></figure>
 

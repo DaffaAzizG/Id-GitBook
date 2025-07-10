@@ -6,7 +6,9 @@ icon: copy
 
 Model Formulir merupakan salah satu menu pada NoBox.Ai yang digunakan untuk membuat model formulir.
 
-{% embed url="https://youtu.be/VWkVMLe85xs" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/VWkVMLe85xs" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Model Formulir.png" alt=""><figcaption></figcaption></figure>
 

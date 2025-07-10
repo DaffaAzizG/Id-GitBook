@@ -6,7 +6,9 @@ icon: square-poll-horizontal
 
 Hasil Formulir merupakan salah satu menu pada NoBox digunakan untuk manajemen data hasil formulir.
 
-{% embed url="https://youtu.be/zbxed-OODf0" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/zbxed-OODf0" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Hasil Formulir.png" alt=""><figcaption></figcaption></figure>
 

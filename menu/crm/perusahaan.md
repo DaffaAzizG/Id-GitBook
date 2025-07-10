@@ -6,7 +6,9 @@ icon: building-memo
 
 Perusahaan adalah salah satu menu pada CRM NoBox.Ai yang digunakan untuk manajemen informasi dan aktivitas yang terkait dengan perusahaan atau bisnis pelanggan.
 
-{% embed url="https://youtu.be/ike07JFtXtc" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/ike07JFtXtc" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Perusahaan.png" alt=""><figcaption></figcaption></figure>
 

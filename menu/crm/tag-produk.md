@@ -6,7 +6,9 @@ icon: tags
 
 Tag Produk adalah salah satu menu pada NoBox.Ai yang digunakan untuk mengelompokkan data produk Anda.
 
-{% embed url="https://youtu.be/OZ3wlC0JokA" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/OZ3wlC0JokA" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Tag Produk.png" alt=""><figcaption></figcaption></figure>
 

@@ -6,7 +6,7 @@ icon: layer-group
 
 Kategori Tugas merupakan salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data tugas.
 
-{% embed url="https://youtu.be/y3ffMdfodHs" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/y3ffMdfodHs" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## **Tambah Kategori Tugas**
 

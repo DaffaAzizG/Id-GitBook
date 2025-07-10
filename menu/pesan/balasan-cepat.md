@@ -6,7 +6,9 @@ icon: messages
 
 Balasan Cepat adalah salah satu menu pada Nobox.Ai yang digunakan untuk template pesan agar dapat membalas pesan lebih cepat berupa pesan teks atau media seperti gambar, GIF dan Video.
 
-{% embed url="https://youtu.be/oU0Z6xRhfnU" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/oU0Z6xRhfnU" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Balasan Cepat (1).png" alt=""><figcaption></figcaption></figure>
 

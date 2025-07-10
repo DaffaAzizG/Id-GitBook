@@ -6,7 +6,9 @@ icon: clipboard-list
 
 Tugas merupakan salah satu menu pada Nobox.Ai yang digunakan untuk melakukan manajemen tugas tim atau individu. Anda dapat mengelola seluruh aktivitas, tugas pengguna atau tugas yang ditunjukan untuk pengguna lain.
 
-{% embed url="https://youtu.be/mElOi9X0-0k" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/mElOi9X0-0k" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Tampilan Tugas.png" alt=""><figcaption></figcaption></figure>
 

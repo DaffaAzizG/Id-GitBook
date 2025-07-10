@@ -6,7 +6,9 @@ icon: tags
 
 Tag Formulir merupakan salah satu menu pada NoBox yang digunakan untuk mengelompokkan data formulir Anda.
 
-{% embed url="https://youtu.be/zZuBGsGfRqQ" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/zZuBGsGfRqQ" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Tag Formulir.png" alt=""><figcaption></figcaption></figure>
 

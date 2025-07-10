@@ -4,7 +4,8 @@ icon: square-user
 
 # Login
 
-{% embed url="https://youtu.be/Cg5MjWd1uUI?si=EqkjcOmg-EqEvQNk" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/Cg5MjWd1uUI?si=EqkjcOmg-EqEvQNk" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Kunjungi website NoBox dan masuk menggunakan akun Anda, pastikan Anda sudah memiliki akun yang terdaftar. Pilih menu **\[Berlangganan]**, unduh installer yang sesuai dengan sistem operasi komputer Anda.
 

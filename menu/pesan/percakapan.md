@@ -6,7 +6,8 @@ icon: messages
 
 Percakapan adalah salah satu menu pada Nobox.Ai yang digunakan untuk monitoring data percakapan.
 
-{% embed url="https://youtu.be/Ajn4M70KeJk" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/Ajn4M70KeJk" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Percakapan (1).png" alt=""><figcaption></figcaption></figure>
 

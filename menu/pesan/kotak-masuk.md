@@ -6,7 +6,9 @@ icon: inbox
 
 Kotak Masuk adalah salah satu menu NoBox.Ai yang digunakan untuk melayani semua pesan yang masuk dari beberapa channel seperti WhatsApp, Telegram, Shopee dll.
 
-{% embed url="https://youtu.be/CeNBiHeQ1aU" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/CeNBiHeQ1aU" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Kotak Masuk.png" alt=""><figcaption></figcaption></figure>
 

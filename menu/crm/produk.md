@@ -6,7 +6,9 @@ icon: box-archive
 
 Produk adalah salah satu menu pada NoBox.Ai yang digunakan untuk manajemen data produk yang dijual.
 
-{% embed url="https://youtu.be/DIHmqinxNEc" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/DIHmqinxNEc" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Produk.png" alt=""><figcaption></figcaption></figure>
 

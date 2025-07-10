@@ -6,7 +6,9 @@ icon: handshake-simple
 
 Penawaran merupakan salah satu menu pada Nobox.Ai yang digunakan untuk melakukan manajemen penawaran, sehingga mempermudah anda dalam mengelola seluruh informasi dan aktivitas progress penjualan.
 
-{% embed url="https://youtu.be/jGn4u60uODA" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/jGn4u60uODA" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/tampilan papan penawaran (1).png" alt=""><figcaption></figcaption></figure>
 

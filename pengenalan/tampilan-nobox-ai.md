@@ -4,7 +4,8 @@ icon: pan-frying
 
 # Tampilan NoBox AI
 
-{% embed url="https://youtu.be/KNauz2G7IGU" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/KNauz2G7IGU" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Pada website NoBox.Ai memiliki beberapa tampilan umum yaitu :
 

@@ -6,7 +6,9 @@ icon: gear
 
 Pengaturan formulir merupakan salah satu menu pada NoBox yang berisi pengaturan format menu model formulir.
 
-{% embed url="https://youtu.be/axmGUD-cOJc" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/axmGUD-cOJc" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Pengaturan Formulir (1).png" alt=""><figcaption></figcaption></figure>
 

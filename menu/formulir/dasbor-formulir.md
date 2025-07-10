@@ -6,7 +6,9 @@ icon: gauge-min
 
 Ringkasan informasi aktivitas yang berhubungan dengan data form dan dapat mempermudah Anda untuk mengambil keputusan.&#x20;
 
-{% embed url="https://youtu.be/Vc0-YrbfoXc" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/Vc0-YrbfoXc" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut :
 

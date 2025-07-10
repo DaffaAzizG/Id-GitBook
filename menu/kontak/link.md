@@ -6,7 +6,8 @@ icon: link
 
 Link adalah salah satu menu Nobox.Ai yang digunakan untuk menampung akun-akun kontak seperti nomer WhatsApp, Email, Telegram dsb.
 
-{% embed url="https://youtu.be/DFfvAKB75RY" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/DFfvAKB75RY" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Link (1).png" alt=""><figcaption></figcaption></figure>
 

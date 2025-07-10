@@ -6,7 +6,8 @@ icon: filter
 
 Funnel adalah salah menu pada Nobox.Ai yang digunakan untuk mengkategorikan tahapan proses pemasaran dan support.
 
-{% embed url="https://youtu.be/bNBOuWh_xGQ" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/bNBOuWh_xGQ" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Funnel.PNG" alt=""><figcaption></figcaption></figure>
 

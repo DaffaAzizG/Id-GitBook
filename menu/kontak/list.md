@@ -6,7 +6,9 @@ icon: list
 
 List adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data kontak.
 
-{% embed url="https://youtu.be/OfOOjWDD_1c" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/OfOOjWDD_1c" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/List.png" alt=""><figcaption></figcaption></figure>
 

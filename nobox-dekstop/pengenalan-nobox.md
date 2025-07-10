@@ -6,7 +6,8 @@ icon: hand-wave
 
 ## **Gambaran Umum NoBox Desktop**&#x20;
 
-{% embed url="https://youtu.be/PHmHyLchx_Q" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/PHmHyLchx_Q" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 NoBox Desktop adalah salah satu aplikasi platform digital yang membantu tim marketing modern untuk memperbanyak prospek pelanggan sesuai target dari 700+ situs direktori bisnis dan iklan baris terbaik di dunia, lalu broadcast promosi ke berbagai channel termasuk WhatsApp, Telegram, Email, Shopee, Facebook, TikTok, dan sebagainya. Hasil broadcast promosi mudah dimonitoring, diklasifikasi dan ditindak lanjuti untuk tercapainya penjualan.
 

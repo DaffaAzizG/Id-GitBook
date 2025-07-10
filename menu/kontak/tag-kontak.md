@@ -6,7 +6,8 @@ icon: hashtag
 
 Tag Kontak adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data kontak Anda.
 
-{% embed url="https://youtu.be/n3daNgK1hKw" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/n3daNgK1hKw" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/1. Tampilan Tag Kontak.png" alt=""><figcaption></figcaption></figure>
 

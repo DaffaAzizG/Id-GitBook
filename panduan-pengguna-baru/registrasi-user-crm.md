@@ -4,7 +4,8 @@ icon: arrow-right-to-bracket
 
 # Registrasi User CRM
 
-{% embed url="https://youtu.be/0ectimbtruk" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/0ectimbtruk" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 1\. Buka website [crm.nobox.ai](https://crm.nobox.ai/)
 

@@ -6,7 +6,9 @@ icon: copy
 
 Laporan Lainnya merupakan salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan pencapaian dan aktivitas.
 
-{% embed url="https://youtu.be/ABr-p4JpPlE" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/ABr-p4JpPlE" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/5. Laporan Lainnya.png" alt=""><figcaption></figcaption></figure>
 

@@ -6,7 +6,8 @@ icon: head-side-goggles
 
 NoBox.Ai adalah aplikasi kecerdasan buatan (Al) untuk meningkatkan kualitas layanan marketing dan customer service di instansi pendidikan, bisnis dan pemerintah. NoBox membantu mengumpulkan dan mengelola data, broadcast pesan, dan menangani chat multi platform dibantu chatbot cerdas yang bisa beroperasi 24 jam non-stop sepanjang tahun.
 
-{% embed url="https://youtu.be/d3nexE3PqQk" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/d3nexE3PqQk" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## **Modul dan Keunggulan NoBox.Ai**
 

@@ -6,7 +6,8 @@ icon: file-chart-column
 
 Laporan Perbandingan merupakan salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan perbandingan dari data CRM.
 
-{% embed url="https://youtu.be/h_bAurpA3hc" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/h_bAurpA3hc" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/3. Laporan Perbandingan.png" alt=""><figcaption></figcaption></figure>
 

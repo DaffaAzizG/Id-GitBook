@@ -8,7 +8,8 @@ icon: address-card
 
 Anda dapat memperbarui User Profile dan Company Details.Artikel ini akan menjelaskan bagaimana cara melakukannya.&#x20;
 
-{% embed url="https://youtu.be/HAihg13T7J8" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/HAihg13T7J8" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## **User Profile**
 

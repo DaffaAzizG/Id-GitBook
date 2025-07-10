@@ -6,7 +6,8 @@ icon: file-chart-column
 
 Laporan adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan dari percakapan yang dilakukan.
 
-{% embed url="https://youtu.be/5Qh-VXqYfIY" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/5Qh-VXqYfIY" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## **Status Agen**
 

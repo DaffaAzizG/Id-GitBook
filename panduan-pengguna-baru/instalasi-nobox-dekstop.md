@@ -8,7 +8,8 @@ icon: arrow-turn-down
 
 Cara install NoBox Desktop bisa dilakukan dengan beberapa langkah mudah. Pada tutorial ini Anda akan belajar cara install dan setting NoBox Desktop.
 
-{% embed url="https://youtu.be/21Lann2ORQM" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/21Lann2ORQM" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../.gitbook/assets/Setup Awal.png" alt=""><figcaption></figcaption></figure>
 

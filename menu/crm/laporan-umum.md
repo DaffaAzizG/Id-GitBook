@@ -6,7 +6,9 @@ icon: file-chart-pie
 
 Laporan Umum merupakan salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan secara umum terkait informasi dari menu CRM.
 
-{% embed url="https://youtu.be/Mx9CLZtzYTA" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/Mx9CLZtzYTA" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/1. Laporan Umum.png" alt=""><figcaption></figcaption></figure>
 

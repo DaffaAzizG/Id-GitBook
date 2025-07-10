@@ -6,7 +6,9 @@ icon: tags
 
 Tag Tugas adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data tugas Anda.
 
-{% embed url="https://youtu.be/lfw4stJWM1A" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/lfw4stJWM1A" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/tampilan tag tugas.png" alt=""><figcaption></figcaption></figure>
 

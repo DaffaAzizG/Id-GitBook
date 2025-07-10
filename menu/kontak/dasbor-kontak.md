@@ -6,7 +6,9 @@ icon: gauge-min
 
 Dasbor Kontak adalah salah satu menu pada Nobox.Ai yang berisi ringkasan informasi aktivitas yang berhubungan dengan kontak dan dapat mempermudah Anda mengambil keputusan.
 
-{% embed url="https://youtu.be/Z8C0_sGruBg" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/Z8C0_sGruBg" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 Untuk membuka menu Dasbor Kontak, klik modul \[Kontak], lalu klik \[Dasbor Kontak].
 

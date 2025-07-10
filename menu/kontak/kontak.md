@@ -6,7 +6,9 @@ icon: address-book
 
 Kontak adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampung data kontak hasil ekstraksi dan menangani data target promosi.
 
-{% embed url="https://youtu.be/3EXx7AMWzwg" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/3EXx7AMWzwg" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Kontak.png" alt=""><figcaption></figcaption></figure>
 

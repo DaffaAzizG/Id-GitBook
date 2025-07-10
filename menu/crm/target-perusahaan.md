@@ -6,7 +6,9 @@ icon: bullseye-arrow
 
 Target Perusahaan merupakan salah satu menu pada Nobox.Ai yang digunakan untuk menentukan suatu target pemasaran dalam salah satu perusahaan disetiap bulannya.
 
-{% embed url="https://youtu.be/KqUtWqBx0T4" %}
+
+<iframe width="742" height="418" src="https://www.youtube.com/embed/KqUtWqBx0T4" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 <figure><img src="../../.gitbook/assets/Tampilan target perusahaan.png" alt=""><figcaption></figcaption></figure>
 

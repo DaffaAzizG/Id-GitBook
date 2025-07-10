@@ -6,7 +6,8 @@ icon: circle-user
 
 Akun adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelola data-data akun dan tool Nobox Desktop.
 
-{% embed url="https://youtu.be/bv4CHVWJu1M" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/bv4CHVWJu1M" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
 ## **Tambah Akun WhatsApp**
 
