@@ -6,7 +6,7 @@ icon: address-book
 
 Kontak adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampung data kontak hasil ekstraksi dan menangani data target promosi.
 
-{% embed url="https://youtu.be/3EXx7AMWzwg" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/3EXx7AMWzwg/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <figure><img src="https://crm.nobox.ai/media/public/Knowlegde%20Base%20Indo%20Version/Kontak/Kontak/tampilan%20kontak.png" alt=""><figcaption></figcaption></figure>
 
@@ -181,22 +181,22 @@ Untuk tambah data penawaran, silahkan klik **\[**<img src="https://crm.nobox.ai/
 
 Lengkapi isian yang diperlukan, sebagai contoh seperti berikut :
 
-| **Isian**          | **Uraian**              | **Contoh**                    |
-| ------------------ | ----------------------- | ----------------------------- |
-| Nama Penawaran     | Nama kesepakatan        | Penawaran Gamis Zeyaa         |
-| Harga              | Harga kesepakatan       | Rp 1.000.000                  |
-| Tugaskan Ke        | Ditugaskan kepada       | Jasmine                       |
-| Tanggal Tutup      | Tanggal tutup           | 07-12-2024                    |
-| Sumber             | Pencarian               | Other                         |
-| Alasan Gagal       | Alasan gagal penawaran  | -                             |
-| Papan              | Pilihan papan           | Penawaran Bulan November 2024 |
-| Tahapan            | Tahapan                 | Sedang                        |
-| Tanggal Mulai      | Tanggal mulai           | 03-12-2024                    |
-| Tanggal Kadaluarsa | Tanggal kadaluarsa      | 10-12-2024                    |
-| Prioritas          | Level Prioritas         | Sedang                        |
-| Perusahaan         | Perusahaan kesepakatan  | PT. Puspita                   |
-| Kontak             | List kontak terkait     | Sasi                          |
-| Produk             | List produk             | Gamis Zeyaa                   |
+| **Isian**          | **Uraian**             | **Contoh**                    |
+| ------------------ | ---------------------- | ----------------------------- |
+| Nama Penawaran     | Nama kesepakatan       | Penawaran Gamis Zeyaa         |
+| Harga              | Harga kesepakatan      | Rp 1.000.000                  |
+| Tugaskan Ke        | Ditugaskan kepada      | Jasmine                       |
+| Tanggal Tutup      | Tanggal tutup          | 07-12-2024                    |
+| Sumber             | Pencarian              | Other                         |
+| Alasan Gagal       | Alasan gagal penawaran | -                             |
+| Papan              | Pilihan papan          | Penawaran Bulan November 2024 |
+| Tahapan            | Tahapan                | Sedang                        |
+| Tanggal Mulai      | Tanggal mulai          | 03-12-2024                    |
+| Tanggal Kadaluarsa | Tanggal kadaluarsa     | 10-12-2024                    |
+| Prioritas          | Level Prioritas        | Sedang                        |
+| Perusahaan         | Perusahaan kesepakatan | PT. Puspita                   |
+| Kontak             | List kontak terkait    | Sasi                          |
+| Produk             | List produk            | Gamis Zeyaa                   |
 
 Jika Anda sudah melengkapi isian yang ada, klik **\[Simpan]** untuk menyimpan data penawaran yang baru saja Anda buat.
 
@@ -230,6 +230,6 @@ Untuk mengedit suatu data kontak, silahkan pilih terlebih dahulu data mana yang 
 
 Untuk menghapus suatu data kontak adalah dengan pilih data mana yang akan dihapus, kemudian klik **\[Hapus]**, maka akan tampil dialog konfirmasi apakah Anda ingin menghapus data. Jika ya, klik **\[Ya]** jika tidak maka klik **\[Tidak]**.
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)[https://youtu.be/3EXx7AMWzwg](https://youtu.be/3EXx7AMWzwg)

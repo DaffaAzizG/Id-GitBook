@@ -6,7 +6,7 @@ icon: tags
 
 Tag Promosi adalah salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data promosi Anda.
 
-{% embed url="https://youtu.be/fxNrtG_VTjk" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/fxNrtG_VTjk/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <figure><img src="../../.gitbook/assets/Tag Promosi.png" alt=""><figcaption></figcaption></figure>
 
@@ -42,6 +42,6 @@ Filter tag promosi digunakan untuk memilah data promosi dan menampilkan data ber
 
 <figure><img src="../../.gitbook/assets/Filter Tag Promosi.png" alt=""><figcaption></figcaption></figure>
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

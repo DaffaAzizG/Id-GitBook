@@ -6,7 +6,7 @@ icon: message-lines
 
 Model pesan adalah salah satu menu pada Nobox.Ai yang digunakan untuk membuat model pesan promosi.&#x20;
 
-{% embed url="https://youtu.be/fUkihH0-qHc" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/fUkihH0-qHc/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <figure><img src="../../.gitbook/assets/Model Pesan.png" alt=""><figcaption></figcaption></figure>
 
@@ -45,6 +45,6 @@ Maka akan muncul dialog **\[Pilih Model]**, pilih model pesan yang akan digunaka
 
 <figure><img src="../../.gitbook/assets/Tampilan Template.png" alt=""><figcaption></figcaption></figure>
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

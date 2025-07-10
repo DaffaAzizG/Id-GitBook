@@ -6,7 +6,7 @@ icon: comments
 
 Kirim Pesan adalah salah satu menu pada Nobox.Ai yang digunakan untuk monitoring hasil kirim pesan dari semua data promosi. Jadi Anda dapat mengetahui hasil kirim pesan yang masih dalam antrian, proses, gagal dan sudah terkirim.
 
-{% embed url="https://youtu.be/EkWgwRnDC2E" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/EkWgwRnDC2E/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <figure><img src="../../.gitbook/assets/Kirim Pesan (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -14,6 +14,6 @@ Kirim Pesan adalah salah satu menu pada Nobox.Ai yang digunakan untuk monitoring
 
 Untuk melihat detail data tersebut, dapat Anda lakukan dengan cara klik salah satu data pada kolom pesan, maka akan tampil detail data kirim pesan yang Anda pilih.
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

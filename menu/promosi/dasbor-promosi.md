@@ -6,7 +6,7 @@ icon: gauge-min
 
 Ringkasan informasi aktivitas yang berhubungan dengan promosi dan dapat mempermudah Anda untuk mengambil keputusan.
 
-{% embed url="https://youtu.be/7NR7TmowmtY" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/7NR7TmowmtY/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <figure><img src="../../.gitbook/assets/Dasbor Promosi.png" alt=""><figcaption></figcaption></figure>
 
