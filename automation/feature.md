@@ -6,7 +6,7 @@ icon: sliders-up
 
 Terdapat beberapa fitur pada menu Automation NoBox Desktop. Diantaranya sebagai berikut :
 
-{% embed url="https://youtu.be/xhIlIABO3SQ" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/xhIlIABO3SQ/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## **Manage Chat**
 
@@ -106,6 +106,6 @@ Test adalah fitur yang digunakan untuk mengetest pengiriman file yang Anda butuh
 
 <table><thead><tr><th width="145.79998779296875">Fitur</th><th>Uraian</th></tr></thead><tbody><tr><td>Send Text</td><td>Fitur test untuk mengirim pesan berupa teks</td></tr><tr><td>Send Images </td><td>Fitur test untuk mengirim pesan berupa gambar dengan format Jpg atau Png</td></tr><tr><td>Send Documents</td><td>Fitur test untuk mengirim pesan berupa dokumen berupa pdf dan lain - lain</td></tr><tr><td>Send Audio</td><td>Fitur test untuk mengirim pesan berupa audio</td></tr><tr><td>Send Video</td><td>Fitur test untuk mengirim pesan berupa video</td></tr><tr><td>Send Stickers</td><td>Fitur test untuk mengirim pesan berupa stiker dengan format Webp dan Png</td></tr><tr><td>Send Location</td><td>Fitur test untuk mengirim pesan berupa lokasi Anda</td></tr><tr><td>Send Contact</td><td>Fitur test untuk mengirim pesan berupa kontak</td></tr><tr><td>Send Lists</td><td>Fitur test untuk mengirim pesan berupa file lainnya</td></tr></tbody></table>
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait NoBox Desktop, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

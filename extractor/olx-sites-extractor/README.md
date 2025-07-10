@@ -6,7 +6,7 @@ icon: boxes-packing
 
 Untuk mendukung semua kelebihannya, OLX Extractor menawarkan sejumlah fitur menarik yang dapat Anda manfaatkan. Diantara sekian banyaknya pilihan fitur yang ada, Anda bisa memanfaatkan beberapa fitur pilihan di bawah ini :
 
-{% embed url="https://youtu.be/i2JsGX__WRg" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/i2JsGX__WRg/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## **Auto Login**
 
@@ -14,10 +14,10 @@ OLX Extractor mendukung fitur auto login. Dengan fitur auto login, pengguna atau
 
 <figure><img src="../../.gitbook/assets/Auto login.png" alt=""><figcaption></figcaption></figure>
 
-* Masuk ke aplikasi NoBox Desktop pada bagian menu **\[Extractor]**
-* Klik **\[Other Options]** pada bagian page **\[Process]**.
-* Isi email dan password OLX terlebih dahulu sebelum melakukan proses selanjutnya
-* Dan klik **\[OK]** untuk menyimpan.
+- Masuk ke aplikasi NoBox Desktop pada bagian menu **\[Extractor]**
+- Klik **\[Other Options]** pada bagian page **\[Process]**.
+- Isi email dan password OLX terlebih dahulu sebelum melakukan proses selanjutnya
+- Dan klik **\[OK]** untuk menyimpan.
 
 ## **Page Process**
 
@@ -45,9 +45,9 @@ Merupakan fitur untuk mengatur waktu cepat lambatnya antara permintaan satu deng
 
 <figure><img src="../../.gitbook/assets/Interval OLX.png" alt=""><figcaption></figcaption></figure>
 
-* Klik **\[Other Options]** pada page **\[Process]**
-* Interval yang tertera adalah pengaturan default NoBox, dan bisa dirubah sesuai dengan kebutuhan
-* Lalu klik **\[OK]** untuk menyimpan
+- Klik **\[Other Options]** pada page **\[Process]**
+- Interval yang tertera adalah pengaturan default NoBox, dan bisa dirubah sesuai dengan kebutuhan
+- Lalu klik **\[OK]** untuk menyimpan
 
 ## **Multi Tab**
 
@@ -55,8 +55,8 @@ OLX Extractor mendukung proses multi tab sehingga dapat menjalankan pencarian de
 
 <figure><img src="../../.gitbook/assets/Multi Tab OLX-1.png" alt=""><figcaption></figcaption></figure>
 
-* Lakukan ekstrasi data pada 1 akun tool dengan pencarian “Laptop” yang berlokasi di “Jawa Timur”, dengan jumlah data yang diambil sebanyak 2 data, dan masuk ke dalam list Laptop Malang,
-* Tambahkan 1 akun lagi dengan pencarian yang sama tetapi dengan lokasi dan jumlah limit result yang berbeda.
+- Lakukan ekstrasi data pada 1 akun tool dengan pencarian “Laptop” yang berlokasi di “Jawa Timur”, dengan jumlah data yang diambil sebanyak 2 data, dan masuk ke dalam list Laptop Malang,
+- Tambahkan 1 akun lagi dengan pencarian yang sama tetapi dengan lokasi dan jumlah limit result yang berbeda.
 
 ## **Website NoBox.Ai**
 
@@ -64,9 +64,9 @@ Untuk urusan data yang sudah diekstraksi akan langsung tersimpan pada website No
 
 <figure><img src="../../.gitbook/assets/Contacts (1).png" alt=""><figcaption></figcaption></figure>
 
-* Masuk ke bagian **\[Contacts]** dan pilih menu **\[Contacts]**
-* Pilih filter **\[Source -> OLX IndonesiaX]**
-* Aktifkan fitur **\[Auto Refresh]**, untuk memantau data apa saja yang berhasil diproses.
+- Masuk ke bagian **\[Contacts]** dan pilih menu **\[Contacts]**
+- Pilih filter **\[Source -> OLX IndonesiaX]**
+- Aktifkan fitur **\[Auto Refresh]**, untuk memantau data apa saja yang berhasil diproses.
 
 ## **Export Data**
 
@@ -74,8 +74,8 @@ NoBox menyediakan opsi untuk menyimpan data yang diekstraksi dalam format Excel 
 
 <figure><img src="../../.gitbook/assets/Export .png" alt=""><figcaption></figcaption></figure>
 
-* Klik **\[Export to Excel]** dibagian page **\[Process]**&#x20;
-* Untuk melihat data apa saja yang baru saja diambil, bisa juga dilihat dari page **\[Results]** lalu klik button **\[Action]** untuk export dalam format excel, csv, dan JSON
+- Klik **\[Export to Excel]** dibagian page **\[Process]**&#x20;
+- Untuk melihat data apa saja yang baru saja diambil, bisa juga dilihat dari page **\[Results]** lalu klik button **\[Action]** untuk export dalam format excel, csv, dan JSON
 
 ## **Penanganan Komputer Mati Saat Ekstrak Data**
 
@@ -83,10 +83,10 @@ NoBox menyediakan fitur jika komputer/software mati secara tidak terduga saat pr
 
 <figure><img src="../../.gitbook/assets/Komputer mati.png" alt=""><figcaption></figcaption></figure>
 
-* Buka kembali aplikasi NoBox dan masuk ke menu **\[Extractor-> OLX]**. Akan ada pemberitahuan bahwa proses sebelumnya masih belum selesai.
-* Klik **\[OK]** untuk melanjutkan proses pencarian data
-* Klik **\[Cancel]** untuk membatalkan pencarian
+- Buka kembali aplikasi NoBox dan masuk ke menu **\[Extractor-> OLX]**. Akan ada pemberitahuan bahwa proses sebelumnya masih belum selesai.
+- Klik **\[OK]** untuk melanjutkan proses pencarian data
+- Klik **\[Cancel]** untuk membatalkan pencarian
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait NoBox Desktop, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

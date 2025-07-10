@@ -6,7 +6,7 @@ icon: whatsapp
 
 WhatsApp Automation secara efisien dapat mengotomasi tindak lanjut calon pelanggan Anda dan mengirim pesan ke WhatsApp dengan cepat dan berkualitas tinggi. Memungkinkan Anda mengirimkan pesan otomatis yang dapat disesuaikan sesuai kebutuhan, dan dapat tersambung dengan chatbot untuk meningkatkan interaksi dengan calon pelanggan secara efektif.
 
-{% embed url="https://youtu.be/ojiToqKbZJA" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/ojiToqKbZJA/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## **Tambah Akun**
 
@@ -14,13 +14,13 @@ Pastikan Anda sudah berlangganan Shopee Automation. Untuk menambah akun baru, kl
 
 <figure><img src="../.gitbook/assets/Tambah Akun Whatsapp.png" alt=""><figcaption></figcaption></figure>
 
-| Isian    | Uraian                                 | Contoh         |
-| -------- | -------------------------------------- | -------------- |
-| Kanal    | Kanal yang Anda pilih                  | WhatsApp       |
-| Kategori | Pilih kategori                         | Automation     |
-| Nama     | Nama akun Anda                         | WhatsApp Cs #1 |
-| Catatan  | Berikan catatan tentang akun tersebut  | -              |
-| Status   | Informasi akun aktif atau tidak        | Aktif          |
+| Isian    | Uraian                                | Contoh         |
+| -------- | ------------------------------------- | -------------- |
+| Kanal    | Kanal yang Anda pilih                 | WhatsApp       |
+| Kategori | Pilih kategori                        | Automation     |
+| Nama     | Nama akun Anda                        | WhatsApp Cs #1 |
+| Catatan  | Berikan catatan tentang akun tersebut | -              |
+| Status   | Informasi akun aktif atau tidak       | Aktif          |
 
 Jika Anda sudah melengkapi isian yang ada, klik **\[Simpan]** untuk menyimpan akun yang baru saja Anda buat. Pastikan NoboxChatManager sudah jalan tunggu beberapa saat hingga kode QR muncul di Nobox, kemudian scan QRcode untuk menautkan dengan WhatsApp Anda.
 
@@ -62,10 +62,10 @@ Untuk menonaktifkan akun adalah dengan pilih salah satu akun WhatsApp Anda, kemu
 
 ## **Edit dan hapus akun**
 
-Untuk mengedit suatu akun, silahkan buka dan login website Nobox,  klik menu **\[Akun]**. Silahkan pilih akun mana yang akan Anda edit, kemudian editlah data Anda dan klik **\[Simpan]** untuk menyimpan perubahan tersebut.
+Untuk mengedit suatu akun, silahkan buka dan login website Nobox, klik menu **\[Akun]**. Silahkan pilih akun mana yang akan Anda edit, kemudian editlah data Anda dan klik **\[Simpan]** untuk menyimpan perubahan tersebut.
 
 Untuk menghapus suatu akun, silahkan pilih akun mana yang akan dihapus, kemudian klik **\[Hapus]**, maka akan tampil pemberitahuan konfirmasi apakah Anda ingin menghapus akun tersebut. Jika ya, klik **\[Ya]** jika tidak maka klik **\[Tidak]**.
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait NoBox Desktop, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)

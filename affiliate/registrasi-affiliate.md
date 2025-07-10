@@ -6,7 +6,7 @@ icon: id-card
 
 Untuk register affiliate Anda dapat mengikuti langkah - langkah berikut :&#x20;
 
-{% embed url="https://youtu.be/ezorU8sCOTQ" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/ezorU8sCOTQ/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 1. Buka portal website affiliate [klik disini](https://crm.nobox.ai/affiliate/authentication_affiliate/register)
 2. Isi data diri Anda

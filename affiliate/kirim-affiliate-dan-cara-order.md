@@ -8,7 +8,7 @@ icon: store
 
 Store affiliate adalah sekumpulan produk yang dijual oleh affiliate
 
-{% embed url="https://youtu.be/WhdytJs5Vyc" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/WhdytJs5Vyc" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <table><thead><tr><th width="165.20001220703125">Fitur/Tombol</th><th>Fungsi</th></tr></thead><tbody><tr><td><img src="../.gitbook/assets/affiliate cart.png" alt=""></td><td>Keranjang digunakan untuk manajemen product yang telah dipilih</td></tr><tr><td><img src="../.gitbook/assets/affiliate tag.png" alt=""></td><td>Produk - produk yang dijual</td></tr><tr><td><img src="../.gitbook/assets/affiliate order list.png" alt=""></td><td>Digunakan untuk manajemen list order Anda</td></tr><tr><td><img src="../.gitbook/assets/affiliate search.png" alt=""></td><td>Search digunakan untuk pencarian product</td></tr><tr><td><img src="../.gitbook/assets/affiliate all products (1).png" alt=""></td><td>Tampilkan semua product</td></tr><tr><td><img src="../.gitbook/assets/affiliate category.png" alt=""></td><td>Tampilkan product per category</td></tr></tbody></table>
 

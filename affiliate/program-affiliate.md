@@ -6,7 +6,7 @@ icon: objects-column
 
 Metode untuk mendapatkan komisi dengan cara mempromosikan produk crm. Setiap penjualan yang terjadi melalui link affiliate Anda, maka Anda berhak mendapatkan komisi penjualan sebesar 30% dari setiap produk yang dijual. Komisi penjualan ini akan otomatis tercatat pada sistem Affiliasi Anda.
 
-{% embed url="https://youtu.be/5iya4OOkmog" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/5iya4OOkmog" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## **Products List**
 

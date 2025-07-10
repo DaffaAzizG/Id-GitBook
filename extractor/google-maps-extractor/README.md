@@ -6,18 +6,17 @@ icon: map-location-dot
 
 Untuk mendukung semua kelebihannya, Google Maps Extractor menawarkan sejumlah fitur menarik yang dapat Anda manfaatkan. Diantara sekian banyaknya pilihan fitur yang ada, Anda bisa memanfaatkan beberapa fitur pilihan di bawah ini :
 
-{% embed url="https://youtu.be/i2JsGX__WRg" %}
+<iframe width="742" height="418" src="https://www.youtube.com/embed/i2JsGX__WRg/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## **Set Karakter Unicode**
 
 NoBox dapat menyimpan hasil pencarian yang diambil dalam format unicode seperti Arabic, Chinesse, Japan, dl&#x6C;**.**\
 
-
 <figure><img src="../../.gitbook/assets/Unicode.png" alt=""><figcaption></figcaption></figure>
 
-* Ubah setting bahasa terlebih dahulu.
-* Lakukan ekstraksi data.&#x20;
-* Jika sudah selesai nantinya data hasil ekstraksi akan tersimpan sesuai bahasa yang dipilih.
+- Ubah setting bahasa terlebih dahulu.
+- Lakukan ekstraksi data.&#x20;
+- Jika sudah selesai nantinya data hasil ekstraksi akan tersimpan sesuai bahasa yang dipilih.
 
 ## **Interval Get List**
 
@@ -51,8 +50,8 @@ Digunakan untuk menjalankan proses pencarian dengan berbagai kata kunci secara b
 
 <figure><img src="../../.gitbook/assets/Multi Tab.png" alt=""><figcaption></figcaption></figure>
 
-* Lakukan ekstrasi data pada 2 akun extractor, tambahkan dengan **"Add Account"**
-* Extractor yang pertama, misalnya lakukan pencarian bebas, dan dengan jumlah data sebanyak 5, dan tambahkan list yang baru.
+- Lakukan ekstrasi data pada 2 akun extractor, tambahkan dengan **"Add Account"**
+- Extractor yang pertama, misalnya lakukan pencarian bebas, dan dengan jumlah data sebanyak 5, dan tambahkan list yang baru.
 
 ## **Website NoBox.Ai**
 
@@ -60,9 +59,9 @@ Untuk urusan data yang sudah diekstraksi akan langsung tersimpan pada website No
 
 <figure><img src="../../.gitbook/assets/Contacts (2).png" alt=""><figcaption></figcaption></figure>
 
-* Masuk ke bagian **\[Contacts]** dan pilih menu **\[Contacts]**
-* Pilih filter **\[Source -> Google Maps]**
-* Aktifkan fitur **\[Auto Refresh]**, untuk memantau data apa saja yang berhasil diproses
+- Masuk ke bagian **\[Contacts]** dan pilih menu **\[Contacts]**
+- Pilih filter **\[Source -> Google Maps]**
+- Aktifkan fitur **\[Auto Refresh]**, untuk memantau data apa saja yang berhasil diproses
 
 ## **Export Data**
 
@@ -70,8 +69,8 @@ NoBox menyediakan opsi untuk menyimpan data yang diekstraksi dalam format Excel 
 
 <figure><img src="../../.gitbook/assets/Export.png" alt=""><figcaption></figcaption></figure>
 
-* Klik **\[Export to Excel]** dibagian page **\[Process]**&#x20;
-* Untuk melihat data apa saja yang baru saja diambil, bisa juga dilihat dari page **\[Results]** lalu klik button **\[Action]** untuk export dalam format excel, csv, dan JSON
+- Klik **\[Export to Excel]** dibagian page **\[Process]**&#x20;
+- Untuk melihat data apa saja yang baru saja diambil, bisa juga dilihat dari page **\[Results]** lalu klik button **\[Action]** untuk export dalam format excel, csv, dan JSON
 
 ## **Penanganan Komputer Mati Saat Ekstrak Data**
 
@@ -79,10 +78,10 @@ NoBox menyediakan fitur jika komputer/software mati secara tidak terduga saat pr
 
 <figure><img src="../../.gitbook/assets/Komputer mati (1).png" alt=""><figcaption></figcaption></figure>
 
-* Buka kembali aplikasi NoBox dan masuk ke menu **\[Extractor -> Google Maps]**. Akan ada pemberitahuan bahwa proses sebelumnya masih belum selesai.
-* Klik **\[OK]** untuk melanjutkan proses pencarian data
-* Klik **\[Cancel]** untuk membatalkan pencarian
+- Buka kembali aplikasi NoBox dan masuk ke menu **\[Extractor -> Google Maps]**. Akan ada pemberitahuan bahwa proses sebelumnya masih belum selesai.
+- Klik **\[OK]** untuk melanjutkan proses pencarian data
+- Klik **\[Cancel]** untuk membatalkan pencarian
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait NoBox Desktop, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
