@@ -6,11 +6,7 @@ body {
   background-color: #f9f9f9;
 }
 
-.book-header {
-  background: #ffffff;
-  color: #000000;
-  border-bottom: 2px solid #0f0f0f;
-}
+
 
 .book-header h1,
 .book-header .title {
@@ -143,7 +139,6 @@ blockquote {
   text-transform: uppercase;
   font-weight: bold;
   padding: 12px 20px 4px 20px;
-  color: #6c757d;
   background-color: #ffffff;
   border-top: 1px solid #dee2e6;
 }
@@ -451,7 +446,6 @@ blockquote {
   left: 0;
   width: 100%;
   height: 80px;
-  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
