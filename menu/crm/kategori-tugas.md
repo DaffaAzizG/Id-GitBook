@@ -6,7 +6,11 @@ icon: layer-group
 
 Kategori Tugas merupakan salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data tugas.
 
+<<<<<<< Updated upstream
 <iframe width="742" height="418" src="https://www.youtube.com/embed/y3ffMdfodHs" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+=======
+<iframe width="742" height="418" src="https://www.youtube.com/embed/y3ffMdfodHs/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+>>>>>>> Stashed changes
 
 ## **Tambah Kategori Tugas**
 
@@ -38,6 +42,6 @@ Untuk menghapus suatu data kategori adalah dengan pilih data mana yang akan diha
 
 3\. Pilih salah satu dari data kategori tersebut dan klik **\[Simpan]** untuk menyimpan kembali data tugas.
 
-***
+---
 
 Jika ada masalah atau kesulitan terkait Nobox.Ai, silahkan hubungi kami melalui [Support Ticket](https://crm.nobox.ai/clients/tickets)
