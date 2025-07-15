@@ -464,9 +464,8 @@ blockquote {
 /* Perbaiki posisi dan warna tombol fontsetting */
 .book-header .font-settings {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: auto;
+  align-items: left;
+  margin-right: auto;
   color: #333;
   z-index: 9999;
 }

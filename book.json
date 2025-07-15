@@ -51,7 +51,6 @@
         "menu/formulir/statistik-formulir.md": "fa-solid fa-chart-bar",
         "menu/formulir/pengaturan-formulir.md": "fa-solid fa-cog",
         "menu/pengaturan/README.md": "fa-solid fa-gear",
-
         "extra/tips.md": "fa-solid fa-lightbulb"
       }
     }
