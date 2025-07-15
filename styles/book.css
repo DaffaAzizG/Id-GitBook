@@ -70,46 +70,10 @@ body {
   color: #7f93bb;
 }
 
-/* ---------------------------------------------------- */
-/*      KODE CSS UNTUK TAMPILAN GITBOOK FULL-WIDTH      */
-/*      (Sesuai dengan screenshot yang diberikan)       */
-/* ---------------------------------------------------- */
-
-/* 1. Hapus batasan container utama dan latar belakang default */
-.book .book-body,
-.book .book-body .body-inner {
-  margin: 0 !important;
-  padding: 0 !important;
-  background: none !important; /* Menghilangkan latar abu-abu */
-}
-
-/* 2. Atur area konten utama (.page-inner) agar lebar penuh dengan padding */
-.book .book-body .page-wrapper .page-inner {
-  /* Paksa lebar menjadi 100% */
-  max-width: 100% !important;
-
-  /* --- INI BAGIAN PALING PENTING --- */
-  /* Atur padding di sini. Format: [atas/bawah] [kiri/kanan] */
-  /* Sesuaikan angka 50px dan 100px ini sesuai selera Anda. */
-  padding: 20px 240px !important;
-
-  /* Penting agar padding tidak membuat halaman lebih lebar dari 100% */
-  box-sizing: border-box;
-}
-
-/* 3. Hapus padding dari elemen di dalamnya untuk menghindari padding ganda/bertumpuk */
-.book .book-body .page-wrapper .page-inner section.normal {
-  padding: 0 !important;
-}
-
-/* 4. (Opsional) Pastikan video responsif dan mengisi ruang dengan baik */
-.book .book-body .page-wrapper .page-inner section.normal iframe,
-.book .book-body .page-wrapper .page-inner section.normal video {
-  max-width: 100%; /* Agar video tidak lebih lebar dari konten */
-  height: auto;
-  aspect-ratio: 16 / 9; /* Menjaga rasio video YouTube */
-  display: block;
-  margin: 25px auto; /* Memberi sedikit jarak atas/bawah dan menengahkan */
+.book-body .page-wrapper .page-inner section.normal {
+  padding: 30px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 h1,
@@ -415,6 +379,27 @@ blockquote {
 
 .book .navigation {
   display: none !important;
+}
+.book .book-body .body-inner {
+  margin-right: 0 !important;
+}
+
+.book .book-body .body-inner {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Konten utama biar lebar penuh */
+.book .book-body .page-wrapper .page-inner {
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 20px !important; /* atau ubah padding sesuai keinginan */
+  box-sizing: border-box;
+}
+
+/* Hapus background putih tengah kalau mau tampilan polos */
+.book .book-body {
+  background: none !important;
 }
 
 /* Style untuk ikon di sidebar summary */
