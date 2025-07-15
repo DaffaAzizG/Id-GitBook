@@ -1,11 +1,12 @@
 ---
 icon: hand-wave
-cover: >-
-  https://yt3.googleusercontent.com/M_elzTgUIcEs_8vNDVv-0_a6Q-erJId9pccG7y0iZE3D25AlMbIyZ21EWI7a8elbpE6-xVeGgQ=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj
-coverY: 0
 ---
 
-# Selamat Datang di NoBox.AI
+<p align="center">
+  <img src="image.jpeg" class="cover"/>
+</p>
+
+# <i class="fa-solid fa-hands"></i> Selamat Datang di NoBox.AI
 
 Di sini, Anda akan menemukan semua informasi tentang fitur-fitur luar biasa NoBox.AI yang membantu bisnis membangun pengalaman pelanggan yang lebih cerdas dan responsif.
 
