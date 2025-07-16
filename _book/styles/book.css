@@ -616,3 +616,93 @@ body.without-summary .book-summary {
 body.without-summary .book-body {
   margin-left: 0 !important;
 }
+
+/* File: styles/website.css (Versi Diperkuat) */
+
+/* Container Utama Sidebar */
+#page-outline {
+  display: block !important; /* PAKSA agar selalu terlihat sebagai block */
+  opacity: 1 !important;     /* PAKSA agar tidak transparan */
+  
+  position: sticky;
+  top: 0;
+  flex-shrink: 0;
+  width: 240px;
+  height: 100vh; 
+  overflow-y: auto;
+  background-color: #fdfdfd;
+  border-left: 1px solid #e9ecef;
+  padding: 16px;
+  font-size: 14px;
+  box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.04);
+}
+
+/* Judul "On this page" (ditambahkan untuk kelengkapan) */
+.outline-title {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 15px;
+    padding: 0 12px;
+}
+
+/* Daftar Menu */
+.outline-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Item pada Daftar */
+.outline-list li {
+  margin-bottom: 4px;
+}
+
+/* Link Menu (Styling utama ada di sini) */
+.outline-list a {
+  display: block !important; /* PAKSA agar area klik tetap ada */
+  color: #495057 !important; /* PAKSA warna teks agar tidak diubah */
+  
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Efek saat kursor mouse di atas link */
+.outline-list a:hover {
+  color: #007bff !important;
+  background-color: #e9f5ff;
+}
+
+/* Style untuk link yang sedang aktif/terpilih */
+.outline-list a.active {
+  background-color: #007bff;
+  color: #ffffff !important; /* PAKSA warna teks putih saat aktif */
+  font-weight: 600;
+}
+
+/* Indentasi untuk Sub-menu */
+.depth-h3 a {
+  padding-left: 24px;
+  font-size: 13.5px;
+}
+.depth-h4 a {
+  padding-left: 36px;
+  font-size: 13px;
+}
+
+/* Kustomisasi Tampilan Scrollbar */
+#page-outline::-webkit-scrollbar {
+  width: 6px;
+}
+#page-outline::-webkit-scrollbar-track {
+  background: transparent;
+}
+#page-outline::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}

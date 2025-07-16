@@ -1,6 +1,4 @@
----
-icon: objects-column
----
+
 
 # Program Affiliate
 
@@ -8,7 +6,7 @@ Metode untuk mendapatkan komisi dengan cara mempromosikan produk crm. Setiap pen
 
 <iframe width="742" height="418" src="https://www.youtube.com/embed/5iya4OOkmog" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## **Products List**
+## Products List
 
 Products list adalah salah satu menu yang digunakan untuk manajemen products yang akan dijual di store affiliate. Untuk tambah product yang akan Anda jual, Silahkan pilih menu **\[Products List]** ➔ **\[Add Products]** maka akan tampil semua pilihan product yang terdapat pada affiliate program. Pilih beberapa produk yang akan dijual.
 
@@ -16,11 +14,11 @@ Products list adalah salah satu menu yang digunakan untuk manajemen products yan
 
 Jika Anda sudah pilih products yang ada, klik **\[Save]** untuk menyimpan data, maka akan tampil product yang ditambahkan pada halaman store Anda. Untuk melihat detail store Anda bisa dilihat pada bagian **\[Preview Store].**
 
-**Hapus Product**
+## Hapus Product
 
 Untuk menghapus suatu data products adalah dengan pilih data product yang tidak digunakan, kemudian klik \[<img src="https://media.istockphoto.com/vectors/check-marks-red-cross-icon-simple-vector-vector-id1131230925?b=1&#x26;k=20&#x26;m=1131230925&#x26;s=170x170&#x26;h=lkF3dCJpR8s-X0VJU1OvaM7H3kYxjMJQL7dMmzMHd1M=" alt="Tanda centang - ikon silang merah sederhana - vektor" data-size="line">], maka akan tampil dialog konfirmasi apakah Anda ingin menghapus salah satu data. Jika ya, klik **\[Yes]** jika tidak maka klik **\[No]**.
 
-## **My Customers**
+## My Customers
 
 My Customers adalah salah satu menu yang digunakan untuk manajemen data customer Anda. Untuk tambah data customer silahkan pilih menu **\[My Customer]** ➔ **\[New]** maka akan muncul tampilan dialog **\[New Customer]** kemudian lengkapi isian-isian yang terdapat pada dialog tersebut.
 
@@ -47,7 +45,7 @@ My Customers adalah salah satu menu yang digunakan untuk manajemen data customer
 
 Jika Anda sudah melengkapi isian yang ada, klik **\[Save]** untuk menyimpan data customer yang baru saja Anda buat.
 
-## **My Orders**
+## My Orders
 
 My Orders adalah salah menu yang dapat digunakan untuk manajenen order product di store Anda, Untuk tambah order product silahkan pilih menu **\[My Orders]** ➔ **\[New]** maka akan tampil dialog **\[New Order]** kemudian lengkapi isian-isian yang terdapat pada dialog tersebut dan pilih item yang akan dibeli.
 
@@ -55,13 +53,13 @@ My Orders adalah salah menu yang dapat digunakan untuk manajenen order product d
 
 Jika Anda sudah melengkapi isian yang ada, klik **\[Save]** untuk menyimpan data order yang baru saja Anda buat.
 
-## **My Logs**
+## My Logs
 
 **My Logs adalah salah satu menu yang digunakan untuk monitoring aktivitas pada crm affiliate dari aktivitas tambah order, perubahan order dan lain sebagainnya**
 
 <figure><img src="../.gitbook/assets/affiliate my logs.png" alt=""><figcaption></figcaption></figure>
 
-## **Transactions**
+## Transactions
 
 Transactions adalah salah satu menu yang digunakan untuk manajemen komisi dari hasil orderan affiliate yang sudah terbayar. Untuk withdraw hasil komisi silahkan pilih menu **\[Transactions]** ➔ Klik Checkbox untuk memilih hasil komisi yang ingin di withdraw ➔ Klik **\[Withdraw all selected]** maka akan tampil dialog withdraw, kemudian lengkapi isian-isian yang terdapat pada dialog tersebut.
 
@@ -77,7 +75,7 @@ Jika Anda sudah melengkapi isian yang ada, klik **\[Save]** untuk menyimpan data
 
 <table><thead><tr><th width="149.79998779296875">Status</th><th>Uraian</th></tr></thead><tbody><tr><td>Unpaid</td><td>Komisi belum terbayar</td></tr><tr><td>Waiting</td><td>Komisi sedang diproses</td></tr><tr><td>Reject</td><td>Komisi ditolak</td></tr><tr><td>Accept</td><td>Komisi sudah dibayar dan sudah terkirim ke rekening Anda</td></tr></tbody></table>
 
-## **Withdraw Request**
+## Withdraw Request
 
 Withdraw Request adalah salah satu menu yang digunakan untuk monitoring proses withdraw di bagian menu ini Anda dapat mengecek status dari withdraw Anda.
 
@@ -85,7 +83,7 @@ Withdraw Request adalah salah satu menu yang digunakan untuk monitoring proses w
 
 <table><thead><tr><th width="149.79998779296875">Status</th><th>Uraian</th></tr></thead><tbody><tr><td>Not Yet Approval</td><td>Komisi masih dalam proses</td></tr><tr><td>Reject</td><td>Komisi ditolak</td></tr><tr><td>Paid</td><td>Komisi telah disetujui dan telah terbayar </td></tr></tbody></table>
 
-## **Reports**
+## Reports
 
 Reports adalah salah satu menu yang digunakan untuk laporan hasi komisi yang di dapat bisa dalam bentuk table ataupun bentuk chart. Pada bagian ini Anda dapat mengetahui detail invoice pelanggan Anda, total penjualan dan total komisi.
 
