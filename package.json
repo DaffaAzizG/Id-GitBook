@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/DaffaAzizG/Id-GitBook#readme",
   "dependencies": {
+    "gitbook-plugin-anchors": "^0.7.1",
     "honkit": "^6.0.3"
   }
 }

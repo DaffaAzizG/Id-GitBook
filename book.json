@@ -1,8 +1,12 @@
 {
-  "theme": "default",
-  "plugins": ["fontsettings", "search", "-sharing", "-sharing-plus"],
+  "plugins": ["fontsettings", "search", "-sharing", "-sharing-plus", "toc"],
   "pluginsConfig": {
     "theme-default": {
+      "toc": {
+        "addClass": true,
+        "className": "page-outline",
+        "maxDepth": 3
+      },
       "templates": "../theme/templates",
       "stylesheet": "../book.css",
       "showLevel": false,
@@ -114,7 +118,7 @@
         "kebijakan-dan-keamanan/kepatuhan-gdpr.md": "fa-solid fa-shield-check",
         "kebijakan-dan-keamanan/kepatuhan.md": "fa-solid fa-check-circle",
         "kebijakan-dan-keamanan/syarat-dan-ketentuan-layanan.md": "fa-solid fa-file-contract",
-        
+
         "menu/pengaturan/README.md": "fa-solid fa-gear",
         "extra/tips.md": "fa-solid fa-lightbulb"
       }
@@ -126,5 +130,11 @@
 
   "styles": {
     "website": "styles/book.css"
-  }
+  },
+
+  "structure": {
+    "langs": "langs.md"
+  },
+
+  "theme": "theme"
 }

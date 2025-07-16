@@ -10,6 +10,32 @@ body {
   background-color: #f9f9f9;
 }
 
+.book-langs-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-family: "Poppins", sans-serif;
+  gap: 20px;
+}
+.book-langs-index ul {
+  list-style: none;
+  padding: 0;
+}
+.book-langs-index li a {
+  font-size: 18px;
+  padding: 10px 20px;
+  background: #1abc9c;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.book-langs-index li a:hover {
+  background: #16a085;
+}
+
 h1,
 h2,
 h3,
@@ -139,6 +165,14 @@ code {
   border-right: 1px solid #bdc3c7;
   padding: 1% 1% 0 1%;
   margin-top: 80px;
+  margin-right: 0;
+  position: fixed;
+  overflow-y: hidden; /* default: tidak ada scrollbar */
+  transition: all 0.3s ease;
+}
+
+.book-summary:hover {
+  overflow-y: auto; /* pas di-hover: scrollbar muncul */
 }
 
 .book-summary ul.summary li a {
@@ -148,6 +182,8 @@ code {
   display: block;
   text-decoration: none;
   border-radius: 10px;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   transition: background 0.3s, color 0.3s;
 }
@@ -236,16 +272,30 @@ code {
 }
 
 .book-body .page-wrapper .page-inner section.normal {
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.cover {
-  width: 100%;
-  height: auto;
+.book-body .page-wrapper .page-inner section.normal iframe {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto;
+  max-width: 100%;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.cover {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 iframe {
@@ -679,4 +729,88 @@ body.without-summary .book-summary {
 
 body.without-summary .book-body {
   margin-left: 0 !important;
+}
+/* Container Utama Sidebar */
+#page-outline {
+  /* Membuat sidebar menempel di atas saat scroll */
+  position: sticky;
+  top: 0; /* Menempel persis di bagian atas viewport */
+
+  flex-shrink: 0;
+  width: 240px;
+  /* Menggunakan seluruh tinggi layar yang tersedia */
+  height: 100vh;
+  overflow-y: auto; /* Scrollbar muncul jika konten lebih panjang dari tinggi layar */
+
+  /* Tampilan Modern */
+  background-color: #fdfdfd; /* Warna background sedikit off-white */
+  border-left: 1px solid #e9ecef; /* Garis batas yang lebih lembut */
+  padding: 16px;
+  font-size: 14px;
+  /* Menambahkan bayangan halus untuk memberikan efek kedalaman */
+  box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.04);
+}
+
+/* Daftar Menu */
+.outline-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Item pada Daftar */
+.outline-list li {
+  margin-bottom: 4px; /* Mengurangi jarak antar item */
+}
+
+/* Link Menu (Styling utama ada di sini) */
+.outline-list a {
+  color: #495057; /* Warna teks yang tidak terlalu pekat */
+  text-decoration: none;
+  display: block; /* Membuat seluruh area bisa di-klik */
+  padding: 10px 12px;
+  border-radius: 6px; /* Sudut yang membulat */
+  font-weight: 500; /* Sedikit lebih tebal dari normal */
+  transition: background-color 0.2s ease, color 0.2s ease; /* Transisi halus */
+}
+
+/* Efek saat kursor mouse di atas link */
+.outline-list a:hover {
+  color: #007bff; /* Warna biru saat hover */
+  background-color: #e9f5ff; /* Background biru muda saat hover */
+}
+
+/* Style untuk link yang sedang aktif/terpilih */
+.outline-list a.active {
+  background-color: #007bff; /* Background biru solid */
+  color: #ffffff; /* Teks menjadi putih */
+  font-weight: 600;
+}
+
+/* Indentasi untuk Sub-menu (lebih rapi dengan padding) */
+.depth-h3 a {
+  padding-left: 24px;
+  font-size: 13.5px;
+}
+
+.depth-h4 a {
+  padding-left: 36px;
+  font-size: 13px;
+}
+
+/* [Opsional] Kustomisasi Tampilan Scrollbar */
+#page-outline::-webkit-scrollbar {
+  width: 6px;
+}
+
+#page-outline::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#page-outline::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+  border: 2px solid transparent;
 }
