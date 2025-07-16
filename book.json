@@ -1,14 +1,18 @@
 {
-  "plugins": ["fontsettings", "search", "-sharing", "-sharing-plus", "toc"],
+  "plugins": [
+    "fontsettings",
+    "search",
+    "-sharing",
+    "-sharing-plus",
+    "toc",
+    "anchors"
+  ],
   "pluginsConfig": {
+    "anchors": {
+      "visible": "always"
+    },
     "theme-default": {
-      "toc": {
-        "addClass": true,
-        "className": "page-outline",
-        "maxDepth": 3
-      },
-      "templates": "../theme/templates",
-      "stylesheet": "../book.css",
+      "stylesheet": "styles/book.css",
       "showLevel": false,
       "icons": {
         "README.md": "fa-solid fa-house",
@@ -54,7 +58,6 @@
         "menu/formulir/tag-formulir.md": "fa-solid fa-tags",
         "menu/formulir/statistik-formulir.md": "fa-solid fa-chart-bar",
         "menu/formulir/pengaturan-formulir.md": "fa-solid fa-cog",
-
         "menu/promosi/promosi.md": "fa-solid fa-bullhorn",
         "menu/promosi/dasbor-kirim-pesan.md": "fa-solid fa-paper-plane",
         "menu/promosi/dasbor-promosi.md": "fa-solid fa-bullhorn",
@@ -64,14 +67,12 @@
         "menu/promosi/model-pesan.md": "fa-solid fa-file-alt",
         "menu/promosi/antrian-email.md": "fa-solid fa-envelope",
         "menu/promosi/tag-promosi.md": "fa-solid fa-tags",
-
         "menu/kontak/README.md": "fa-solid fa-address-book",
         "menu/kontak/dasbor-kontak.md": "fa-solid fa-users",
         "menu/kontak/kontak.md": "fa-solid fa-user-friends",
         "menu/kontak/tag-kontak.md": "fa-solid fa-tags",
         "menu/kontak/link.md": "fa-solid fa-link",
         "menu/kontak/list.md": "fa-solid fa-list",
-
         "menu/akun.md": "fa-solid fa-user",
         "menu/ai-agents.md": "fa-solid fa-robot",
         "menu/human-agents.md": "fa-solid fa-users",
@@ -83,7 +84,6 @@
         "menu/pengaturan/mengganti-password.md": "fa-solid fa-key",
         "menu/pengaturan/inputan-khusus.md": "fa-solid fa-keyboard",
         "menu/pengaturan/file-manager.md": "fa-solid fa-folder-open",
-
         "automation/bukalapak.md": "fa-solid fa-store",
         "automation/e-mail.md": "fa-solid fa-envelope",
         "automation/feature.md": "fa-solid fa-cogs",
@@ -91,23 +91,18 @@
         "automation/telegram.md": "fa-solid fa-paper-plane",
         "automation/tokopedia.md": "fa-solid fa-store-alt",
         "automation/whatsapp.md": "fa-solid fa-comments",
-
         "extractor/google-maps-extractor/README.md": "fa-solid fa-map-marked-alt",
         "extractor/google-maps-extractor/scrape-google-maps.md": "fa-solid fa-map-marked",
-
         "extractor/olx-sites-extractor/README.md": "fa-solid fa-store",
         "extractor/olx-sites-extractor/scrape-olx-sites.md": "fa-solid fa-store-alt",
         "extractor/indonesiayp.com-extractor.md": "fa-solid fa-globe",
-
         "affiliate/kirim-affiliate-dan-cara-order.md": "fa-solid fa-share-alt",
         "affiliate/program-affiliate.md": "fa-solid fa-network-wired",
         "affiliate/registrasi-affiliate.md": "fa-solid fa-user-plus",
-
         "penyelesaian-masalah/masalah-user-tidak-bisa-login.md": "fa-solid",
         "masalah-tidak-bisa-menambah-account-dan-tools.md": "fa-solid fa-exclamation-triangle",
         "konfigurasi-api-telegram.md": "fa-solid fa-robot",
         "lupa-password.md": "fa-solid fa-key",
-
         "kebijakan-dan-keamanan/keamanan.md": "fa-solid fa-shield-alt",
         "kebijakan-dan-keamanan/kebijakan-privasi.md": "fa-solid fa-user-secret",
         "kebijakan-dan-keamanan/hubungi-kami.md": "fa-solid fa-envelope",
@@ -118,16 +113,13 @@
         "kebijakan-dan-keamanan/kepatuhan-gdpr.md": "fa-solid fa-shield-check",
         "kebijakan-dan-keamanan/kepatuhan.md": "fa-solid fa-check-circle",
         "kebijakan-dan-keamanan/syarat-dan-ketentuan-layanan.md": "fa-solid fa-file-contract",
-
         "menu/pengaturan/README.md": "fa-solid fa-gear",
         "extra/tips.md": "fa-solid fa-lightbulb"
       }
     }
   },
-
   "cover": "../image.jpeg",
   "coverY": 0,
-
   "styles": {
     "website": "styles/book.css"
   },
