@@ -6,10 +6,29 @@ body {
   background-color: #f9f9f9;
 }
 
+.book.color-theme-2 body {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2c3e50;
+  background-color: red;
+}
+
+.book-header h1,
+.book-header .title {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
 .book-header {
   background: #ffffff;
   color: #000000;
-  border-bottom: 2px solid #0f0f0f;
+}
+
+.book.color-theme-2 .book-header {
+  background: #1d1d1d;
+  color: #ffffff;
 }
 
 .book-header h1,
@@ -445,8 +464,7 @@ blockquote {
   font-family: "Segoe UI", sans-serif;
 }
 
-/* HEADER tetap fixed */
-/* .book-header {
+.book-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -460,14 +478,13 @@ blockquote {
   justify-content: space-between;
   padding: 0 24px;
   z-index: 999;
-} */
+}
 
 /* Perbaiki posisi dan warna tombol fontsetting */
-/* .book-header .font-settings {
+.book-header .font-settings {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-left: auto;
+  align-items: left;
+  margin-right: auto;
   color: #333;
   z-index: 9999;
 }
@@ -486,20 +503,7 @@ blockquote {
 
 .book-header .font-settings * {
   color: inherit !important;
-} */
-
-/* SIDEBAR pindah ke bawah header */
-/* .book-summary {
-  top: 80px; /* Turun sesuai tinggi header */
-/* left: 0;
-  width: 300px; /* Tetap sidebar vertikal */
-/* height: calc(100% - 80px);
-  background: #f7f7f7;
-  border-right: 1px solid #ddd;
-  overflow-y: auto;
-  z-index: 998;
-  padding: 10px 0;
-} */
+}
 
 .book-body {
   margin-top: 80px;
@@ -520,4 +524,74 @@ body.without-summary .book-summary {
 
 body.without-summary .book-body {
   margin-left: 0 !important;
+}
+
+iframe {
+  display: flex;
+  justify-content: center;
+}
+
+/* ============================= */
+/* SEARCH RESULTS STYLING - CARD */
+/* ============================= */
+
+.search-results {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-results-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* List hasil */
+.search-results-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr; /* Atau bisa 1fr 1fr untuk 2 kolom */
+  gap: 16px;
+}
+
+/* Kartu hasil */
+.search-results-list li {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease;
+  border-left: 4px solid #1abc9c; /* Aksen warna */
+}
+
+.search-results-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Tautan hasil */
+.search-results-list li a {
+  color: #1abc9c;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.search-results-list li a:hover {
+  text-decoration: underline;
+}
+
+/* Deskripsi atau cuplikan isi */
+.search-results-list li p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
 }
