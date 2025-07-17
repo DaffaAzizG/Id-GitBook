@@ -1,13 +1,38 @@
 /* ==========================================================================
    1. STRUKTUR DASAR & TIPOGRAFI
    ========================================================================== */
-
 body {
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #2c3e50;
   background-color: #f9f9f9;
+}
+
+.custom-font-buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  display: flex;
+  gap: 8px;
+}
+
+.custom-font-buttons button {
+  padding: 6px 10px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.custom-font-buttons button:hover {
+  background-color: #eee;
+}
+
+.font-settings-control {
+  display: none !important;
 }
 
 .book-langs-index {
@@ -499,9 +524,8 @@ blockquote {
   border-left: 4px solid transparent; /* Aksen border transparan */
   /* Transisi yang terasa "fisik" dan halus */
   transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
-              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
-              background-color 0.3s ease,
-              border-color 0.3s ease;
+    box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 /* Efek Hover: Kartu terangkat, bayangan muncul, aksen warna tampil */
@@ -710,15 +734,14 @@ blockquote {
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal {
   /* Background menjadi gelap, serasi dengan sidebar */
-  background: #1e1e1e; 
-  
+  background: #1e1e1e;
+
   /* Bayangan tidak lagi diperlukan atau bisa dibuat sangat halus */
-  box-shadow: none; 
+  box-shadow: none;
   /* Alternatif jika ingin tetap ada bayangan:
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
   */
 }
-
 
 /*
 =================================================================
@@ -736,7 +759,7 @@ blockquote {
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal {
   /* Background warna krem/kertas tua, serasi dengan sidebar */
   background: #f4f0e8;
-  
+
   /* Bayangan lembut dengan warna kecoklatan agar lebih estetik */
   box-shadow: 0 2px 4px rgba(87, 72, 59, 0.07);
 }
@@ -985,7 +1008,12 @@ body.without-summary .book-body {
 
 .book.color-theme-2 .outline-list a:hover {
   color: #80bfff !important; /* Biru terang saat hover */
-  background-color: rgba(0, 123, 255, 0.15); /* Background hover gelap transparan */
+  background-color: rgba(
+    0,
+    123,
+    255,
+    0.15
+  ); /* Background hover gelap transparan */
 }
 
 .book.color-theme-2 .outline-list a.active {
