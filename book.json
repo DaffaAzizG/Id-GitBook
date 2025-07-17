@@ -1,6 +1,12 @@
 {
-  "theme": "default",
-  "plugins": [ "search","anchors"],
+  "plugins": [
+    "fontsettings",
+    "search",
+    "-sharing",
+    "-sharing-plus",
+    "toc",
+    "anchors"
+  ],
   "pluginsConfig": {
     "anchors": {
       "visible": "always"
@@ -116,5 +122,11 @@
   "coverY": 0,
   "styles": {
     "website": "styles/book.css"
-  }
+  },
+
+  "structure": {
+    "langs": "langs.md"
+  },
+
+  "theme": "theme"
 }
