@@ -325,7 +325,7 @@ code {
 .book-body {
   margin-top: 80px;
   padding: 24px;
-  background: none !important;
+  background: white;
 }
 
 .book-body .page-wrapper .page-inner section.normal {
@@ -1091,4 +1091,78 @@ body.without-summary .book-body {
 
 .book.color-theme-1 #page-outline::-webkit-scrollbar-thumb {
   background-color: #b0a293; /* Warna scrollbar coklat muda */
+}
+
+
+/* ==========================================================================
+   8. RESPONSIVE DESIGN (UNTUK LAYAR KECIL / MOBILE)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+
+  /* 1. Sembunyikan sidebar kanan ("On this page") sepenuhnya */
+  #page-outline {
+    display: none !important;
+  }
+
+  /* 2. Pastikan area konten utama SELALU menggunakan lebar penuh */
+  body.with-summary .book-body,
+  body.without-summary .book-body {
+    margin-left: 0 !important;
+  }
+  
+  /* Atur padding konten agar tidak terlalu mepet di layar kecil */
+  .book-body .page-wrapper .page-inner {
+    padding: 0 15px !important;
+  }
+  .book-body .page-wrapper .page-inner section.normal {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* 3. Ubah sidebar kiri menjadi menu overlay yang bisa slide in/out */
+  .book-summary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px; /* Lebar menu saat terbuka */
+    height: 100vh; /* Tinggi penuh layar */
+    margin-top: 0;
+    z-index: 1002; /* Paling atas, di atas overlay */
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+
+    /* SECARA DEFAULT, SEMBUNYIKAN MENU DI LUAR LAYAR */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  /* SAAT MENU AKTIF (setelah tombol hamburger diklik), MUNCULKAN MENU */
+  body.with-summary .book-summary {
+    transform: translateX(0);
+  }
+
+  /* 4. Tambahkan overlay gelap di belakang menu saat terbuka */
+  body.with-summary::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1001; /* Di bawah menu, tapi di atas konten */
+  }
+
+  /* 5. Pastikan tombol hamburger di header selalu terlihat */
+  .book-header .js-toolbar-action[data-action="toggle-summary"] {
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  /* Kecilkan judul di header agar tidak memakan banyak tempat */
+  .book-header h1,
+  .book-header .title {
+    font-size: 18px;
+    padding: 10px 5px;
+  }
 }
