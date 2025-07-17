@@ -1137,13 +1137,92 @@ body.without-summary .book-body {
   background-color: #b0a293; /* Warna scrollbar coklat muda */
 }
 
-
 /* ==========================================================================
    8. RESPONSIVE DESIGN (UNTUK LAYAR KECIL / MOBILE)
    ========================================================================== */
 
-@media (max-width: 1024px) {
+@media (max-width: 480) {
+  /* Sembunyikan sidebar kanan ("On this page") sepenuhnya */
+  .book-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    z-index: 999;
+    color: #000000;
+  }
+}
 
+@media (max-width: 600px) {
+  /* 1. Sembunyikan sidebar kanan ("On this page") sepenuhnya */
+  .book-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 14px;
+    z-index: 999;
+    color: #000000;
+  }
+}
+
+@media (max-width: 768px) {
+  /* 1. Sembunyikan sidebar kanan ("On this page") sepenuhnya */
+  .book-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    z-index: 999;
+    color: #000000;
+  }
+}
+
+@media (max-width: 992) {
+  .book-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    z-index: 999;
+    color: #000000;
+  }
+}
+
+@media (max-width: 1200) {
+}
+@media (max-width: 1201px) {
   /* 1. Sembunyikan sidebar kanan ("On this page") sepenuhnya */
   #page-outline {
     display: none !important;
@@ -1154,7 +1233,7 @@ body.without-summary .book-body {
   body.without-summary .book-body {
     margin-left: 0 !important;
   }
-  
+
   /* Atur padding konten agar tidak terlalu mepet di layar kecil */
   .book-body .page-wrapper .page-inner {
     padding: 0 15px !important;
@@ -1187,7 +1266,7 @@ body.without-summary .book-body {
 
   /* 4. Tambahkan overlay gelap di belakang menu saat terbuka */
   body.with-summary::after {
-    content: '';
+    content: "";
     position: fixed;
     top: 0;
     left: 0;
@@ -1202,7 +1281,7 @@ body.without-summary .book-body {
     display: block !important;
     visibility: visible !important;
   }
-  
+
   /* Kecilkan judul di header agar tidak memakan banyak tempat */
   .book-header h1,
   .book-header .title {
