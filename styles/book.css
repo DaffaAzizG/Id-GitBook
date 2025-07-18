@@ -364,8 +364,9 @@
   }
 
   .book-body .page-wrapper .page-inner section.normal {
-    padding-top: 50px;
+    padding-top: 20px;
 
+    padding-left: 40px;
     background: white;
   }
 
