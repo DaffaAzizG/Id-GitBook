@@ -354,10 +354,6 @@
     transform: rotate(90deg);
   }
 
-  /* ==========================================================================
-    4. LAYOUT & KONTEN UTAMA
-    ========================================================================== */
-
   .book-body {
     margin-top: 60px;
     background: white;
@@ -365,7 +361,6 @@
 
   .book-body .page-wrapper .page-inner section.normal {
     padding-top: 20px;
-
     padding-left: 40px;
     background: white;
   }
@@ -529,26 +524,6 @@
   #modalSearchResults li a:hover {
     text-decoration: underline;
   }
-
-  /* ============================= */
-  /* SEARCH RESULTS STYLING - CARD */
-  /* ============================= */
-  /*
-  =================================================================
-    BASE STYLE - SEARCH RESULTS
-    Style dasar yang sudah diperbagus untuk tema terang/default.
-  =================================================================
-  */
-
-  /* Kontainer utama hasil pencarian */
-  /*
-  =================================================================
-    BASE STYLE (LIGHT THEME) - REFINED SEARCH RESULTS
-    Fokus pada desain yang bersih, spasi, dan interaksi yang halus.
-  =================================================================
-  */
-
-  /* Kontainer utama hasil pencarian */
   .search-results {
     padding: 24px;
     max-width: 900px;
