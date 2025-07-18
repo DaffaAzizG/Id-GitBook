@@ -5,11 +5,15 @@
     "-sharing",
     "-sharing-plus",
     "toc",
-    "anchors"
+    "anchors",
+    "theme-default"
   ],
   "pluginsConfig": {
     "anchors": {
       "visible": "always"
+    },
+    "myTheme": {
+      "template": "./templates/myTheme"
     },
     "theme-default": {
       "stylesheet": "styles/book.css",
@@ -130,5 +134,5 @@
     "langs": "langs.md"
   },
 
-  "theme": "theme"
+  "theme": "theme/myTheme"
 }
