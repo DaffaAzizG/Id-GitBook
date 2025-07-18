@@ -648,6 +648,9 @@ blockquote {
 .book.color-theme-2 .book-body {
   background-color: #1e1e1e !important;
 }
+.book.color-theme-1 .book-body {
+  background-color: #f4f0e8 !important;
+}
 /* <<< ----------------------------- >>> */
 
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal {
