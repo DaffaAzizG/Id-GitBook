@@ -1,6 +1,11 @@
   /* ==========================================================================
     1. STRUKTUR DASAR & TIPOGRAFI
     ========================================================================== */
+
+    /* Pastikan Anda menggunakan URL yang menyertakan semua weight yang dibutuhkan: 300, 400, 700 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+/* ... sisa kode CSS Anda ... */
   body {
     font-family: "Segoe UI", sans-serif;
     font-size: 16px;
@@ -210,7 +215,7 @@
   .book-summary {
     background: #ffffff;
     color: #34495e;
-    border-right: 1px solid #bdc3c7;
+    border: none;
     padding: 1% 1% 0 1%;
     margin-top: 60px;
     margin-right: 0;
@@ -222,8 +227,8 @@
   .book.color-theme-1 .book-summary {
     background: #f4f0e8;
     color: #5b4636;
-    border-right: 1px solid #bdc3c7;
     padding: 1% 1% 0 1%;
+    border: none;
     margin-top: 60px;
     margin-right: 0;
     position: fixed;
@@ -241,17 +246,18 @@
   }
 
   .book-summary ul.summary li a {
-    color: #2c3e50;
+    color: #696969;
     padding: 5px 15px;
     margin: 0 3px;
     display: block;
     text-decoration: none;
     border-radius: 10px;
     font-size: 13px;
-    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-family: "Inter", sans-serif; 
     width: 100%;
     transition: background 0.3s, color 0.3s;
-  }
+}
 
   .book-summary ul.summary li a:hover {
     background: #f0efef;
@@ -304,7 +310,6 @@
     font-weight: bold;
     padding: 12px 20px 4px 20px;
     color: #6c757d;
-    border-top: 1px solid #dee2e6;
   }
 
   /* Ikon di sidebar */
@@ -355,17 +360,13 @@
 
   .book-body {
     margin-top: 60px;
-    padding: 24px;
     background: white;
   }
 
   .book-body .page-wrapper .page-inner section.normal {
     padding-top: 50px;
 
-    padding-left: 30px;
-    padding-right: 30px;
     background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   }
 
   .book-body .page-wrapper .page-inner section.normal iframe {
@@ -861,14 +862,12 @@
     background: #f4f0e8;
 
     /* Bayangan lembut dengan warna kecoklatan agar lebih estetik */
-    box-shadow: 0 2px 4px rgba(87, 72, 59, 0.07);
   }
 
   /* Link: sedikit lebih biru neon */
   /* ----------------- SIDEBAR (SUMMARY) - PERBAIKAN ----------------- */
   .book.color-theme-2 .book-summary {
     background: #1e1e1e !important;
-    border-right: 1px solid #333333 !important;
   }
 
   .book.color-theme-2 .book-summary #book-search-input {
@@ -880,8 +879,12 @@
     color: #5b4636;
   }
   /* Gaya untuk link yang TIDAK aktif */
+   /* Gaya untuk link biasa */
   .book.color-theme-2 .book-summary ul.summary li:not(.active) > a {
-    color: #b0b0b0 !important; /* Warna abu-abu untuk link biasa */
+    color: #696969 !important;
+    /* DIUBAH: Nama font harus dalam tanda kutip dan ada fallback */
+    font-family: "Inter", sans-serif;
+    font-weight: lighter !important; /* Saya sarankan 400 untuk normal, 300 (light) mungkin terlalu tipis */
   }
 
   /* Gaya untuk link saat di-hover (jika tidak aktif) */
@@ -891,14 +894,16 @@
     border-radius: 8px;
   }
 
-  /* Gaya untuk link yang AKTIF (baik di li atau di chapter) */
+  /* Gaya untuk link yang AKTIF */
   .book.color-theme-2 .book-summary ul.summary li.active > a,
   .book.color-theme-2 .book-summary .chapter.active > a,
   .book.color-theme-2 .book-summary .chapter.active > .chapter-title > a {
-    color: #58a6ff !important; /* Warna BIRU AKSEN untuk yang aktif */
-    font-weight: bold;
+    color: #58a6ff !important;
+    font-weight: 700 !important;
     background: rgba(88, 166, 255, 0.15) !important;
     border-radius: 8px;
+    /* DIUBAH: Sama seperti di atas */
+    font-family: "Inter", sans-serif;
   }
 
   /* Gaya untuk judul dokumen di sidebar */
@@ -910,7 +915,6 @@
     border-bottom: none;
     padding-bottom: 0;
   }
-
   /* ================= SEARCH INPUT ================= */
   .book.color-theme-2 #book-search-input input[type="text"],
   .book.color-theme-2 .custom-search-box input[type="text"],
@@ -1008,13 +1012,9 @@
     width: 240px;
     height: 100vh; /* Menggunakan seluruh tinggi layar */
     overflow-y: auto; /* Scrollbar jika konten panjang */
-
-    /* Tampilan Modern */
-    background-color: #fdfdfd; /* Warna background sedikit off-white */
-    border-left: 1px solid #e9ecef; /* Garis batas lembut */
+    background-color: #ffffff; /* Warna background sedikit off-white */
     padding: 16px;
     font-size: 14px;
-    box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.04); /* Bayangan halus */
     transition: background-color 0.3s ease, border-color 0.3s ease; /* Transisi halus untuk ganti tema */
   }
 
@@ -1045,16 +1045,19 @@
     color: #495057 !important; /* !important untuk override style bawaan GitBook */
     text-decoration: none;
     display: block !important;
-    padding: 10px 12px;
+    padding: 5px 12px;
     border-radius: 6px;
-    font-weight: 500;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 500 !important;
     transition: background-color 0.2s ease, color 0.2s ease;
   }
 
   /* Efek Hover */
   .outline-list a:hover {
-    color: #007bff !important;
-    background-color: #e9f5ff;
+    background: #f0efef;
+    color: black !important;
+    text-decoration: none
   }
 
   /* Link Aktif/Terpilih */
@@ -1067,7 +1070,8 @@
   /* Indentasi Sub-menu */
   .depth-h3 a {
     padding-left: 24px;
-    font-size: 13.5px;
+        font-size: 13px;
+
   }
   .depth-h4 a {
     padding-left: 36px;
@@ -1095,8 +1099,6 @@
 
   .book.color-theme-2 #page-outline {
     background-color: #1e1e1e; /* Background gelap */
-    border-left: 1px solid #303438; /* Garis batas lebih gelap */
-    box-shadow: -3px 0px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih terlihat */
   }
 
   .book.color-theme-2 .outline-title {
@@ -1135,8 +1137,6 @@
 
   .book.color-theme-1 #page-outline {
     background-color: #f4f0e8; /* Background krem/kertas tua */
-    border-left: 1px solid #e6e0d4; /* Garis batas warna senada */
-    box-shadow: -3px 0px 15px rgba(87, 72, 59, 0.06); /* Bayangan kecoklatan */
   }
 
   .book.color-theme-1 .outline-title {
