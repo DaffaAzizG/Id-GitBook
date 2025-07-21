@@ -289,12 +289,36 @@ button[data-toggle="summary"],
   font-family: "Inter", sans-serif;
   width: 100%;
   transition: background 0.3s, color 0.3s;
+  white-space: normal !important; /* biar bisa wrap ke bawah */
+  overflow: visible !important; /* hilangkan potongan ... */
+  text-overflow: unset !important; /* tidak pakai ellipsis */
+  word-break: break-word !important; /* pecah kata panjang */
 }
 
 .book-summary ul.summary li a:hover {
   background: #f0efef;
   color: black;
   text-decoration: none;
+}
+
+.summary .chapter a {
+  display: flex;
+  align-items: flex-start; /* biar teks mulai dari atas */
+  gap: 8px; /* jarak antara icon dan teks */
+  white-space: normal;
+  overflow: visible;
+  text-overflow: unset;
+  word-break: break-word;
+}
+
+.summary .chapter a > i {
+  flex-shrink: 0; /* biar icon gak diperkecil */
+  margin-top: 2px; /* opsional: biar icon sejajar teks atas */
+}
+
+.book-summary .gitbook-link {
+  position: sticky;
+  bottom: 100;
 }
 
 .book.color-theme-1 .book-summary ul.summary li a:hover {
@@ -1255,7 +1279,7 @@ body.without-summary .book-body {
 /* Menambahkan ikon panah menggunakan pseudo-element */
 .page-nav-link.prev::before,
 .page-nav-link.next::after {
-  font-family: 'Font Awesome 5 Free', 'FontAwesome'; /* Pastikan FontAwesome dimuat */
+  font-family: "Font Awesome 5 Free", "FontAwesome"; /* Pastikan FontAwesome dimuat */
   font-weight: 900;
   position: absolute;
   top: 50%;
@@ -1266,12 +1290,12 @@ body.without-summary .book-body {
 }
 
 .page-nav-link.prev::before {
-  content: '\f053'; /* Kode ikon panah kiri */
+  content: "\f053"; /* Kode ikon panah kiri */
   left: 20px;
 }
 
 .page-nav-link.next::after {
-  content: '\f054'; /* Kode ikon panah kanan */
+  content: "\f054"; /* Kode ikon panah kanan */
   right: 20px;
 }
 
@@ -1290,21 +1314,148 @@ body.without-summary .book-body {
 }
 
 @media (max-width: 480px) {
+  body {
+    font-family: "Segoe UI", sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #f9f9f9;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #2c3e50;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    font-weight: 100;
+  }
+
+  pre {
+    background: #2d3436;
+    color: #ecf0f1;
+    padding: 6px;
+    overflow: auto;
+    border-radius: 2px;
+    font-family: "Courier New", monospace;
+  }
+
+  code {
+    background: #dfe6e9;
+    color: #2c3e50;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  .book-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    z-index: 999;
+    color: #000000;
+  }
+
   .book-header h1,
   .book-header .title {
-    display: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 9px;
+    margin: 0;
+    margin-right: auto;
   }
+
+  .book.with-summary .book-summary {
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+  }
+
   .book-summary {
-    position: static;
-    width: 100%;
-    margin-top: 0;
-    padding: 10px;
-    box-shadow: none;
-    border-top: 1px solid #e0e0e0;
+    position: fixed !important;
+    top: 50px;
+    left: 0;
+    height: 100%;
+    width: 80%; /* atau 100% kalau ingin full screen */
+    max-height: 100vh;
+    overflow-y: auto;
+    background: #fff;
+    z-index: 1000;
+    transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .book.with-summary .book-body {
+    transform: none !important;
+  }
+
+  .book-summary {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 300px; /* atau ukuran sidebar */
+    height: 100%;
+    z-index: 9998;
+    background: #fff; /* warna background sidebar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .book.with-summary .book-summary {
+    transform: translateX(0%) !important;
+  }
+
+  .book-body {
+    overflow: hidden; /* biar gak bisa scroll saat summary buka */
+  }
+
+  .book.with-summary .book-body {
+    overflow: hidden;
+  }
+
+  .book-header {
+    z-index: 9999;
+  }
+
+  .book .book-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1002; /* pastikan lebih tinggi dari summary */
+  }
+
+  .book .book-body {
+    padding-top: 50px; /* sesuaikan dengan tinggi header */
+  }
+
+  .book.with-summary .book-body {
+    overflow: hidden;
   }
   .book-summary ul.summary li a {
     padding: 10px;
     font-size: 14px;
+    white-space: normal !important; /* biar bisa wrap ke bawah */
+    overflow: visible !important; /* hilangkan potongan ... */
+    text-overflow: unset !important; /* tidak pakai ellipsis */
+    word-break: break-word !important; /* pecah kata panjang */
   }
   .book-summary ul.summary li a:hover {
     background: #f0efef;
@@ -1315,6 +1466,14 @@ body.without-summary .book-body {
   }
   #page-outline {
     display: none !important;
+  }
+
+  .book-summary {
+    width: 100%;
+    z-index: 9999;
+  }
+  .book.with-summary .book-body {
+    margin-left: 0 !important;
   }
 }
 
