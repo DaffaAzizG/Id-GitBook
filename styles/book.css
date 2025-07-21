@@ -142,6 +142,13 @@ code {
   margin-left: auto;
 }
 
+.book.color-theme-1 .book-header .font-settings {
+  color: #5b4636;
+}
+.book.color-theme-2 .book-header .font-settings {
+  color: #e0e0e0;
+}
+
 button[data-toggle="summary"],
 .toggle-summary {
   display: none !important;
@@ -1285,7 +1292,6 @@ body.without-summary .book-body {
 }
 
 .book.color-theme-1 .outline-list a:hover {
-  
   background-color: #fef6e5; /* Background hover warna krem lebih gelap */
 }
 
@@ -1518,13 +1524,71 @@ body.without-summary .book-body {
   .book-header .title {
     display: none !important;
   }
+
+  .book.with-summary .book-summary {
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .with-summary .book-summary {
+    position: fixed;
+    top: 50px; /* Sesuaikan dengan tinggi header */
+    left: 0;
+    width: 100%; /* Lebar sidebar */
+    height: calc(100vh - 60px); /* Tinggi penuh minus header */
+    overflow-y: auto; /* Scrollbar jika konten panjang */
+    background-color: #ffffff; /* Warna background putih */
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
   .book-summary {
-    position: static;
-    width: 100%;
-    margin-top: 0;
-    padding: 10px;
-    box-shadow: none;
-    border-top: 1px solid #e0e0e0;
+    position: fixed !important;
+    top: 50px;
+    left: 0;
+    height: 100%;
+    width: 100%; /* atau 100% kalau ingin full screen */
+    max-height: 100vh;
+    overflow-y: auto;
+    background: #fff;
+    z-index: 1000;
+    transform: translateX(-100%);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .book.with-summary .book-body {
+    transform: none !important;
+  }
+
+  .book.with-summary .book-summary {
+    transform: translateX(0%) !important;
+  }
+
+  .book.with-summary .book-body {
+    overflow: hidden;
+  }
+
+  .book-header {
+    z-index: 9999;
+  }
+
+  .book .book-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1002; /* pastikan lebih tinggi dari summary */
+  }
+
+  .book .book-body {
+    padding-top: 50px; /* sesuaikan dengan tinggi header */
+  }
+
+  .book.with-summary .book-body {
+    overflow: hidden;
   }
   .book-summary ul.summary li a {
     padding: 10px;
@@ -1540,110 +1604,174 @@ body.without-summary .book-body {
   #page-outline {
     display: none !important;
   }
-}
 
-@media (max-width: 768px) {
-  .book-header h1,
-  .book-header .title {
-    display: none !important;
-  }
   .book-summary {
-    position: static;
     width: 100%;
-    margin-top: 0;
-    padding: 15px;
-    box-shadow: none;
-    border-top: 1px solid #e0e0e0;
+    z-index: 9999;
   }
+  .book.with-summary .book-body {
+    margin-left: 0 !important;
+  }
+  /* ============================================= */
+  /* ==      PENGATURAN TIPOGRAFI RESPONSİF     == */
+  /* ==  (Letakkan ini di bagian paling atas)    == */
+  /* ============================================= */
+
+  :root {
+    --font-size-base: clamp(0.9rem, 0.8rem + 0.5vw, 1.1rem);
+    --font-size-h1: clamp(1.75rem, 1.5rem + 2vw, 2.75rem);
+    --font-size-h2: clamp(1.5rem, 1.25rem + 1.5vw, 2.25rem);
+    --font-size-h3: clamp(1.25rem, 1.1rem + 1vw, 1.75rem);
+    --font-size-small: clamp(0.75rem, 0.7rem + 0.25vw, 0.9rem);
+  }
+
+  .page-inner,
+  body {
+    font-size: var(--font-size-base);
+  }
+
+  h1,
+  .h1 {
+    font-size: var(--font-size-h1);
+  }
+
+  h2,
+  .h2 {
+    font-size: var(--font-size-h2);
+  }
+
+  h3,
+  .h3 {
+    font-size: var(--font-size-h3);
+  }
+
   .book-summary ul.summary li a {
-    padding: 12px;
-    font-size: 15px;
-  }
-  .book-summary ul.summary li a:hover {
-    background: #f0efef;
-  }
-  .book-body {
-    padding: 15px;
-    margin-top: 0;
-  }
-  #page-outline {
-    display: none !important;
-  }
-}
-
-@media (max-width: 900px) {
-  .book-summary {
-    position: static;
-    width: 100%;
-    margin-top: 0;
-    padding: 20px;
-    box-shadow: none;
-    border-top: 1px solid #e0e0e0;
-  }
-  .book-summary ul.summary li a {
-    padding: 15px;
-    font-size: 16px;
-  }
-  #page-outline {
-    display: none !important;
-  }
-}
-/* ============================================= */
-/* ==      4. GAYA RESPONSIVE UNTUK NAVIGASI  == */
-/* ============================================= */
-
-/* Untuk Tablet dan layar lebih kecil (mulai dari 768px ke bawah) */
-/* Pada breakpoint ini, kita ubah layout menjadi satu kolom (bertumpuk) */
-@media (max-width: 768px) {
-  .page-navigation {
-    flex-direction: column; /* Mengubah layout dari horizontal ke vertikal */
-    gap: 15px;             /* Mengatur jarak vertikal antar tombol */
-    margin-top: 32px;
+    font-size: var(--font-size-base);
   }
 
-  /* Karena sekarang satu kolom, tombol 'Next' tidak perlu rata kanan lagi */
-  .page-nav-link.next {
-    text-align: left;
-  }
-  
-  /* Sedikit mengurangi ukuran font judul untuk tablet */
   .page-nav-link .nav-title {
-    font-size: 15px;
-  }
-}
-
-
-/* Untuk Ponsel (mulai dari 480px ke bawah) */
-/* Di sini kita perkecil lagi ukuran font dan padding agar pas di layar ponsel */
-@media (max-width: 480px) {
-  /* Aturan dari max-width: 768px sudah diwarisi (seperti flex-direction: column) */
-  
-  .page-nav-link {
-    padding: 12px 15px; /* Kurangi padding tombol */
+    font-size: var(--font-size-base);
   }
 
   .page-nav-link .nav-label {
-    font-size: 11px; /* Perkecil font label "Sebelumnya/Selanjutnya" */
+    font-size: var(--font-size-small);
   }
 
-  .page-nav-link .nav-title {
-    font-size: 14px; /* Perkecil lagi font judul */
+  /* ======================================================= */
+  /* ==     MEDIA QUERY UNTUK LAYOUT (TANPA FONT-SIZE)    == */
+  /* ======================================================= */
+
+  @media (max-width: 900px) {
+    .book-summary {
+      position: static;
+      width: 100%;
+      margin-top: 0;
+      padding: 20px;
+      box-shadow: none;
+      border-top: 1px solid #e0e0e0;
+    }
+    .book-summary ul.summary li a {
+      padding: 15px;
+      /* font-size: 16px; DIHAPUS */
+    }
+    #page-outline {
+      display: none !important;
+    }
   }
 
-  /* Sesuaikan posisi ikon panah karena padding berubah */
-  .page-nav-link.prev {
-    padding-left: 45px; /* Beri ruang untuk ikon kiri */
+  @media (max-width: 768px) {
+    .book-header h1,
+    .book-header .title {
+      display: none !important;
+    }
+    .book-summary {
+      padding: 15px;
+    }
+    .book-summary ul.summary li a {
+      padding: 12px;
+      /* font-size: 15px; DIHAPUS */
+    }
+    .book-summary ul.summary li a:hover {
+      background: #f0efef;
+    }
+    .book-body {
+      padding: 15px;
+      margin-top: 0;
+    }
+
+    /* Aturan layout untuk navigasi bawah */
+    .page-navigation {
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 32px;
+    }
+    .page-nav-link.next {
+      text-align: left;
+    }
+    /* .page-nav-link .nav-title { font-size: 15px; DIHAPUS } */
   }
 
-  .page-nav-link.next {
-    padding-right: 45px; /* Beri ruang untuk ikon kanan */
+  @media (max-width: 480px) {
+    .book-summary {
+      padding: 10px;
+    }
+    .book-summary ul.summary li a {
+      padding: 10px;
+      /* font-size: 14px; DIHAPUS */
+    }
+    .book-body {
+      padding: 10px;
+    }
+
+    /* Aturan layout untuk navigasi bawah */
+    .page-nav-link {
+      padding: 12px 15px;
+    }
+    /* .page-nav-link .nav-label { font-size: 11px; DIHAPUS } */
+    /* .page-nav-link .nav-title { font-size: 14px; DIHAPUS } */
+    .page-nav-link.prev {
+      padding-left: 45px;
+    }
+    .page-nav-link.next {
+      padding-right: 45px;
+    }
+    .page-nav-link.prev::before {
+      left: 15px;
+    }
+    .page-nav-link.next::after {
+      right: 15px;
+    }
+  }
+  /* ============================================= */
+  /* ==   DIAGNOSIS: PAKSA TEKS JADI RESPONSİF  == */
+  /* ============================================= */
+
+  :root {
+    --font-size-base: clamp(0.9rem, 0.8rem + 0.5vw, 1.1rem);
+    --font-size-h1: clamp(1.75rem, 1.5rem + 2vw, 2.75rem);
+    --font-size-h2: clamp(1.5rem, 1.25rem + 1.5vw, 2.25rem);
+    --font-size-h3: clamp(1.25rem, 1.1rem + 1vw, 1.75rem);
+    --font-size-label: clamp(
+      0.8rem,
+      0.75rem + 0.25vw,
+      0.9rem
+    ); /* Sekitar 12.8px - 14.4px */
   }
 
-  .page-nav-link.prev::before {
-    left: 15px; /* Posisikan ikon kiri */
+  /* KITA TAMBAHKAN !important DI SINI */
+  .page-inner {
+    font-size: var(--font-size-base) !important;
   }
 
-  .page-nav-link.next::after {
-    right: 15px; /* Posisikan ikon kanan */
+  .page-inner h1 {
+    font-size: var(--font-size-h1) !important;
+  }
+
+  .page-inner h2 {
+    font-size: var(--font-size-h2) !important;
+  }
+
+  .page-inner h3 {
+    font-size: var(--font-size-h3) !important;
   }
 }

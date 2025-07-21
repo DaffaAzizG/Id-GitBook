@@ -1,7 +1,7 @@
-# 🌐 Mengalihkan ke Pemilihan Bahasa
+# Mengalihkan ke Pemilihan Bahasa
 
 <div id="loading" style="font-size: 1.2em; margin-bottom: 1em;">
-  🔄 Sedang mengalihkan ke halaman pemilihan bahasa...
+  Sedang mengalihkan ke halaman pemilihan bahasa...
 </div>
 
 <div id="fallback" style="display:none;">
