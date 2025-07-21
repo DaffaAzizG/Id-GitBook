@@ -25,10 +25,6 @@ body {
   z-index: 9999;
 }
 
-.chapter .chapter-title .toggle-btn {
-  margin-right: 2%;
-}
-
 .book .font-settings .dropdown-caret {
   display: none !important;
 }
@@ -209,47 +205,72 @@ button[data-toggle="summary"],
 */
 
 /* --- STYLE UNTUK TEMA TERANG / DEFAULT --- */
-.book-summary::-webkit-scrollbar {
-  width: 10px; /* Lebar scrollbar */
-}
+/* ========================================================== */
+/* ==      PERBAIKAN FINAL V3: MELAWAN !IMPORTANT DARI TEMA   == */
+/* ========================================================== */
 
+/* 1. ATURAN DASAR & STRUKTUR (Berlaku untuk semua) */
+.book-summary::-webkit-scrollbar {
+  width: 8px;
+}
 .book-summary::-webkit-scrollbar-track {
-  /* Biarkan transparan atau beri warna background jika perlu */
   background: transparent;
 }
+.book-summary::-webkit-scrollbar-button {
+  display: none !important; /* Pastikan panah selalu hilang */
+}
 
+/* 2. LOGIKA UNTUK TEMA DEFAULT (Yang sudah bekerja dengan baik) */
 .book-summary::-webkit-scrollbar-thumb {
-  background-color: #bdc3c7; /* Warna abu-abu yang serasi dengan border */
-  border-radius: 10px; /* Membuat sudut membulat */
-  /* Memberi jarak/padding di sekitar thumb scrollbar */
-  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.25s ease-in-out;
+}
+.book-summary:hover::-webkit-scrollbar-thumb {
+  background-color: #bdc3c7;
+}
+.book-summary:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #95a5a6;
 }
 
-.book-summary::-webkit-scrollbar-thumb:hover {
-  background-color: #95a5a6; /* Warna lebih gelap saat kursor di atas */
+/* 3. PERBAIKAN TOTAL UNTUK TEMA SEPIA (.color-theme-1) */
+.book.color-theme-1 .book-summary {
+  overflow-y: auto !important;
 }
-
-/* --- STYLE UNTUK TEMA DARK (.color-theme-2) --- */
-.book.color-theme-2 .book-summary::-webkit-scrollbar-thumb {
-  background-color: #4a5056; /* Warna scrollbar yang lebih gelap */
-  /* Border disesuaikan dengan background gelap sidebar */
-  border: 2px solid #24272b; /* Ganti #24272b dengan warna background dark Anda jika berbeda */
-}
-
-.book.color-theme-2 .book-summary::-webkit-scrollbar-thumb:hover {
-  background-color: #6c757d;
-}
-
-/* --- STYLE UNTUK TEMA SEPIA (.color-theme-1) --- */
+/* Paksa thumb menjadi transparan secara default */
 .book.color-theme-1 .book-summary::-webkit-scrollbar-thumb {
-  background-color: #b0a293; /* Warna scrollbar coklat muda */
-  /* Border disesuaikan dengan background sepia sidebar */
-  border: 2px solid #fbf5e9; /* Ganti #fbf5e9 dengan warna background sepia Anda jika berbeda */
+  background-color: transparent !important;
+}
+/* Paksa thumb muncul saat hover */
+.book.color-theme-1 .book-summary:hover::-webkit-scrollbar-thumb {
+  background-color: #b0a293 !important;
+}
+.book.color-theme-1 .book-summary:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #9a8b7c !important;
 }
 
-.book.color-theme-1 .book-summary::-webkit-scrollbar-thumb:hover {
-  background-color: #9a8b7c;
+/* 4. PERBAIKAN TOTAL UNTUK TEMA DARK (.color-theme-2) */
+.book.color-theme-2 .book-summary {
+  overflow-y: auto !important;
 }
+/* Paksa thumb menjadi transparan secara default */
+.book.color-theme-2 .book-summary::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+}
+/* Paksa thumb muncul saat hover */
+.book.color-theme-2 .book-summary:hover::-webkit-scrollbar-thumb {
+  background-color: #4a5056 !important;
+}
+.book.color-theme-2 .book-summary:hover::-webkit-scrollbar-thumb:hover {
+  background-color: #6c757d !important;
+}
+
+/* 
+   CATATAN UNTUK FIREFOX (jika diperlukan di masa depan)
+   Logika !important tidak berlaku sama untuk scrollbar-color,
+   namun kode di atas akan mencakup mayoritas pengguna (Chrome, Edge, Safari).
+*/
 
 .book-summary {
   background: #ffffff;
@@ -296,36 +317,12 @@ button[data-toggle="summary"],
   font-family: "Inter", sans-serif;
   width: 100%;
   transition: background 0.3s, color 0.3s;
-  white-space: normal !important; /* biar bisa wrap ke bawah */
-  overflow: visible !important; /* hilangkan potongan ... */
-  text-overflow: unset !important; /* tidak pakai ellipsis */
-  word-break: break-word !important; /* pecah kata panjang */
 }
 
 .book-summary ul.summary li a:hover {
   background: #f0efef;
   color: black;
   text-decoration: none;
-}
-
-.summary .chapter a {
-  display: flex;
-  align-items: flex-start; /* biar teks mulai dari atas */
-  gap: 8px; /* jarak antara icon dan teks */
-  white-space: normal;
-  overflow: visible;
-  text-overflow: unset;
-  word-break: break-word;
-}
-
-.summary .chapter a > i {
-  flex-shrink: 0; /* biar icon gak diperkecil */
-  margin-top: 2px; /* opsional: biar icon sejajar teks atas */
-}
-
-.book-summary .gitbook-link {
-  position: sticky;
-  bottom: 100;
 }
 
 .book.color-theme-1 .book-summary ul.summary li a:hover {
@@ -342,11 +339,50 @@ button[data-toggle="summary"],
   font-weight: bold;
 }
 
+.summary .chapter > a:after {
+  display: none !important;
+}
+
+/* ======================================================= */
+/* ==   GAYA SIDEBAR UNTUK TEMA SEPIA (.color-theme-1)  == */
+/* ======================================================= */
+
+/* 1. Gaya untuk link biasa (tidak aktif) */
+.book.color-theme-1 .book-summary ul.summary li:not(.active) > a {
+  color: #706156 !important; /* Warna coklat pudar untuk link yang tidak aktif */
+  font-family: "Inter", sans-serif;
+  font-weight: lighter !important;
+}
+
+/* 2. Gaya untuk link biasa saat di-hover */
+.book.color-theme-1 .book-summary ul.summary li:not(.active) > a:hover {
+  color: #6a3f0f !important; /* Gunakan warna aktif untuk hover agar ada progres visual */
+  background: #fef6e5 !important; /* Latar krem yang serasi */
+  border-radius: 8px;
+}
+
+/* 3. Gaya untuk link yang AKTIF (menggunakan warna dari Anda) */
 .book.color-theme-1 .book-summary ul.summary li.active > a,
 .book.color-theme-1 .book-summary .chapter.active > a,
 .book.color-theme-1 .book-summary .chapter.active > .chapter-title > a {
-  color: #6a3f0f;
-  font-weight: bold;
+  color: #6a3f0f !important; /* Warna coklat tua yang Anda pilih */
+  font-weight: bold !important;
+  background: rgba(
+    254,
+    246,
+    229,
+    0.6
+  ) !important; /* Latar belakang krem yang sedikit transparan agar tidak terlalu mencolok */
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+/* 4. Gaya untuk link AKTIF saat di-hover (menggunakan warna dari Anda) */
+.book.color-theme-1 .book-summary ul.summary li.active > a:hover,
+.book.color-theme-1 .book-summary .chapter.active > a:hover,
+.book.color-theme-1 .book-summary .chapter.active > .chapter-title > a:hover {
+  color: #473223 !important; /* Warna coklat sangat tua yang Anda pilih */
+  background: #fef6e5 !important; /* Latar krem menjadi solid saat di-hover */
 }
 
 .book-summary ul.summary li.active > a:hover,
@@ -356,19 +392,8 @@ button[data-toggle="summary"],
   color: #7f93bb;
 }
 
-.book.book.color-theme-1 .book-summary ul.summary li.active > a:hover,
-.book.book.color-theme-1 .book-summary .chapter.active > a:hover,
-.book.book.color-theme-1
-  .book-summary
-  .chapter.active
-  > .chapter-title
-  > a:hover {
-  background: #fef6e5;
-  color: #473223;
-}
-
-/* Ganti aturan .summary-group-header Anda dengan yang ini */
 .summary-group-header {
+  font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
   padding: 12px 20px 4px 20px;
@@ -390,6 +415,16 @@ button[data-toggle="summary"],
 .chapter-title {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  gap: 6px;
+
+  white-space: normal !important; /* biar teks wrap */
+  overflow: visible !important;
+  text-overflow: unset !important;
+}
+
+.chapter-title > span {
+  white-space: normal; /* hanya teksnya saja yang wrap */
 }
 
 .has-children > .chapter-title {
@@ -478,7 +513,6 @@ td {
 }
 
 th {
-  background: #ecf0f1;
   font-weight: bold;
 }
 
@@ -1284,7 +1318,7 @@ body.without-summary .book-body {
 
 .page-nav-link.prev::before,
 .page-nav-link.next::after {
-  font-family: "Font Awesome 5 Free", "FontAwesome"; /* Pastikan FontAwesome dimuat */
+  font-family: "Font Awesome 5 Free", "FontAwesome";
   font-weight: 900;
   position: absolute;
   top: 50%;
@@ -1295,12 +1329,12 @@ body.without-summary .book-body {
 }
 
 .page-nav-link.prev::before {
-  content: "\f053"; /* Kode ikon panah kiri */
+  content: "\f053";
   left: 20px;
 }
 
 .page-nav-link.next::after {
-  content: "\f054"; /* Kode ikon panah kanan */
+  content: "\f054";
   right: 20px;
 }
 
@@ -1437,69 +1471,9 @@ body.without-summary .book-body {
   color: #5a8fb3;
 }
 @media (max-width: 480px) {
-  body {
-    font-family: "Segoe UI", sans-serif;
-    font-size: 10px;
-    line-height: 1.6;
-    color: #2c3e50;
-    background-color: #f9f9f9;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #2c3e50;
-    margin-top: 18px;
-    margin-bottom: 10px;
-    font-weight: 100;
-  }
-
-  pre {
-    background: #2d3436;
-    color: #ecf0f1;
-    padding: 6px;
-    overflow: auto;
-    border-radius: 2px;
-    font-family: "Courier New", monospace;
-  }
-
-  code {
-    background: #dfe6e9;
-    color: #2c3e50;
-    padding: 2px 5px;
-    border-radius: 4px;
-  }
-
-  .book-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(6px);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 18px;
-    z-index: 999;
-    color: #000000;
-  }
-
   .book-header h1,
   .book-header .title {
-    opacity: 1 !important;
-    visibility: visible !important;
-    display: block !important;
-    font-weight: bold;
-    font-size: 16px;
-    padding: 5px 9px;
-    margin: 0;
-    margin-right: auto;
+    display: none !important;
   }
 
   .book.with-summary .book-summary {
@@ -1570,10 +1544,6 @@ body.without-summary .book-body {
   .book-summary ul.summary li a {
     padding: 10px;
     font-size: 14px;
-    white-space: normal !important; /* biar bisa wrap ke bawah */
-    overflow: visible !important; /* hilangkan potongan ... */
-    text-overflow: unset !important; /* tidak pakai ellipsis */
-    word-break: break-word !important; /* pecah kata panjang */
   }
   .book-summary ul.summary li a:hover {
     background: #f0efef;
