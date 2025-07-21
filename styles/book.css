@@ -13,6 +13,18 @@ body {
   background-color: #f9f9f9;
 }
 
+.gitbook-link {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 300px; /* Sesuaikan dengan lebar .book-summary */
+  background: rgba(255, 255, 255, 0.95); /* Sesuaikan dengan tema */
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  z-index: 9999;
+}
+
 .book .font-settings .dropdown-caret {
   display: none !important;
 }
@@ -1176,3 +1188,79 @@ body.without-summary .book-body {
 /* ==========================================================================
    8. RESPONSIVE DESIGN (UNTUK LAYAR KECIL / MOBILE)
    ========================================================================== */
+
+@media (max-width: 480px) {
+  .book-header h1,
+  .book-header .title {
+    display: none !important;
+  }
+  .book-summary {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+    box-shadow: none;
+    border-top: 1px solid #e0e0e0;
+  }
+  .book-summary ul.summary li a {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .book-summary ul.summary li a:hover {
+    background: #f0efef;
+  }
+  .book-body {
+    padding: 10px;
+    margin-top: 0;
+  }
+  #page-outline {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-header h1,
+  .book-header .title {
+    display: none !important;
+  }
+  .book-summary {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    padding: 15px;
+    box-shadow: none;
+    border-top: 1px solid #e0e0e0;
+  }
+  .book-summary ul.summary li a {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .book-summary ul.summary li a:hover {
+    background: #f0efef;
+  }
+  .book-body {
+    padding: 15px;
+    margin-top: 0;
+  }
+  #page-outline {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .book-summary {
+    position: static;
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+    box-shadow: none;
+    border-top: 1px solid #e0e0e0;
+  }
+  .book-summary ul.summary li a {
+    padding: 15px;
+    font-size: 16px;
+  }
+  #page-outline {
+    display: none !important;
+  }
+}
