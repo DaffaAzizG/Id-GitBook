@@ -271,7 +271,7 @@ button[data-toggle="summary"],
 .book-summary {
   background: #ffffff;
   color: #34495e;
-  border: none;
+  border: none; 
   padding: 1% 1% 0 1%;
   margin-top: 60px;
   margin-right: 0;
@@ -335,11 +335,41 @@ button[data-toggle="summary"],
   font-weight: bold;
 }
 
+/* ======================================================= */
+/* ==   GAYA SIDEBAR UNTUK TEMA SEPIA (.color-theme-1)  == */
+/* ======================================================= */
+
+/* 1. Gaya untuk link biasa (tidak aktif) */
+.book.color-theme-1 .book-summary ul.summary li:not(.active) > a {
+  color: #706156 !important; /* Warna coklat pudar untuk link yang tidak aktif */
+  font-family: "Inter", sans-serif;
+  font-weight: lighter !important;
+}
+
+/* 2. Gaya untuk link biasa saat di-hover */
+.book.color-theme-1 .book-summary ul.summary li:not(.active) > a:hover {
+  color: #6a3f0f !important; /* Gunakan warna aktif untuk hover agar ada progres visual */
+  background: #fef6e5 !important; /* Latar krem yang serasi */
+  border-radius: 8px;
+}
+
+/* 3. Gaya untuk link yang AKTIF (menggunakan warna dari Anda) */
 .book.color-theme-1 .book-summary ul.summary li.active > a,
 .book.color-theme-1 .book-summary .chapter.active > a,
 .book.color-theme-1 .book-summary .chapter.active > .chapter-title > a {
-  color: #6a3f0f;
-  font-weight: bold;
+  color: #6a3f0f !important; /* Warna coklat tua yang Anda pilih */
+  font-weight: bold !important;
+  background: rgba(254, 246, 229, 0.6) !important; /* Latar belakang krem yang sedikit transparan agar tidak terlalu mencolok */
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+}
+
+/* 4. Gaya untuk link AKTIF saat di-hover (menggunakan warna dari Anda) */
+.book.color-theme-1 .book-summary ul.summary li.active > a:hover,
+.book.color-theme-1 .book-summary .chapter.active > a:hover,
+.book.color-theme-1 .book-summary .chapter.active > .chapter-title > a:hover {
+  color: #473223 !important; /* Warna coklat sangat tua yang Anda pilih */
+  background: #fef6e5 !important; /* Latar krem menjadi solid saat di-hover */
 }
 
 .book-summary ul.summary li.active > a:hover,
@@ -347,17 +377,6 @@ button[data-toggle="summary"],
 .book-summary .chapter.active > .chapter-title > a:hover {
   background: #e8f0ff;
   color: #7f93bb;
-}
-
-.book.book.color-theme-1 .book-summary ul.summary li.active > a:hover,
-.book.book.color-theme-1 .book-summary .chapter.active > a:hover,
-.book.book.color-theme-1
-  .book-summary
-  .chapter.active
-  > .chapter-title
-  > a:hover {
-  background: #fef6e5;
-  color: #473223;
 }
 
 .summary-group-header {
@@ -470,7 +489,6 @@ td {
 }
 
 th {
-  background: #ecf0f1;
   font-weight: bold;
 }
 
