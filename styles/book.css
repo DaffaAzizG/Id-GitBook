@@ -25,6 +25,10 @@ body {
   z-index: 9999;
 }
 
+.chapter .chapter-title .toggle-btn {
+  margin-right: 2%;
+}
+
 .book .font-settings .dropdown-caret {
   display: none !important;
 }
