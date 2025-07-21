@@ -268,6 +268,13 @@ button[data-toggle="summary"],
    namun kode di atas akan mencakup mayoritas pengguna (Chrome, Edge, Safari).
 */
 
+/* ======================================================= */
+/* ==      GAYA SIDEBAR LENGKAP UNTUK SEMUA TEMA        == */
+/* ======================================================= */
+
+/* --- 1. GAYA KONTAINER SIDEBAR --- */
+
+/* Tema Default */
 .book-summary {
   background: #ffffff;
   color: #34495e;
@@ -276,10 +283,11 @@ button[data-toggle="summary"],
   margin-top: 60px;
   margin-right: 0;
   position: fixed;
-  overflow-y: hidden; /* default: tidak ada scrollbar */
+  overflow-y: hidden;
   transition: all 0.3s ease;
 }
 
+/* Tema Sepia (.color-theme-1) */
 .book.color-theme-1 .book-summary {
   background: #f4f0e8;
   color: #5b4636;
@@ -288,8 +296,44 @@ button[data-toggle="summary"],
   margin-top: 60px;
   margin-right: 0;
   position: fixed;
-  overflow-y: hidden; /* default: tidak ada scrollbar */
+  overflow-y: hidden;
   transition: all 0.3s ease;
+}
+
+/* Tema Dark (.color-theme-2) */
+.book.color-theme-2 .book-summary {
+  background: #1e1e1e;
+  /* color di sini hanya sebagai fallback */
+  color: #696969; 
+  padding: 1% 1% 0 1%;
+  border: none;
+  margin-top: 60px;
+  margin-right: 0;
+  position: fixed;
+  overflow-y: hidden;
+  transition: all 0.3s ease;
+}
+
+
+/* --- 2. GAYA TEKS DI DALAM SIDEBAR TEMA GELAP (.color-theme-2) --- */
+
+/*
+  Menargetkan SEMUA elemen teks utama di dalam sidebar tema gelap
+  (judul grup dan link menu) untuk menerapkan gaya yang konsisten.
+*/
+.book.color-theme-2 .book-summary ul.summary li a {
+  color: #696969 !important; /* Warna abu-abu yang Anda inginkan */
+  font-family: "Inter", sans-serif;
+  font-weight: 300 !important; /* 300 adalah 'Light', lebih spesifik dari 'lighter' */
+}
+
+/* 
+  Memberi sedikit penekanan pada item yang aktif atau di-hover 
+  agar tidak monoton, namun tetap mempertahankan nuansa gelap.
+*/
+.book.color-theme-2 .book-summary ul.summary li.active > a,
+.book.color-theme-2 .book-summary ul.summary li a:hover {
+  color: #d1d1d1 !important; /* Warna abu-abu yang lebih terang untuk item aktif/hover */
 }
 
 .book-summary #book-search-input {
@@ -379,12 +423,34 @@ button[data-toggle="summary"],
   color: #7f93bb;
 }
 
+/* ======================================================= */
+/* ==      GAYA SUMMARY GROUP HEADER UNTUK 3 TEMA       == */
+/* ======================================================= */
+
+/* 1. Gaya Dasar (Berlaku untuk Semua Tema) */
+/* Mendefinisikan struktur, padding, dan ketebalan font. */
 .summary-group-header {
-  font-size: 14px;
+  font-size: 14px; /* Anda bisa menggantinya dengan variabel jika sudah ada */
   text-transform: uppercase;
   font-weight: bold;
   padding: 12px 20px 4px 20px;
-  color: #6c757d;
+}
+
+/* 2. Penyesuaian Warna per Tema */
+
+/* TEMA 0: DEFAULT / TERANG */
+.summary-group-header {
+  color: #6c757d !important; /* Warna abu-abu standar yang Anda berikan */
+}
+
+/* TEMA 1: SEPIA (.color-theme-1) */
+.book.color-theme-1 .summary-group-header {
+  color: #706156 !important; /* Warna coklat hangat yang serasi dengan nuansa sepia */
+}
+
+/* TEMA 2: DARK (.color-theme-2) */
+.book.color-theme-2 .summary-group-header {
+  color: #aab3bb !important; /* Warna abu-abu terang agar kontras dan mudah dibaca di latar gelap */
 }
 
 /* Ikon di sidebar */
