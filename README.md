@@ -1,9 +1,6 @@
----
-icon: hand-wave
----
-
-<p align="center">
-  <img src="image.jpeg" class="cover"/>
+<!-- README.md -->
+<p class="cover-container">
+  <img src="../image.jpeg" class="cover"/>
 </p>
 
 # <i class="fa-solid fa-hands"></i> Selamat Datang di NoBox.AI

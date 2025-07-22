@@ -16,7 +16,7 @@
       "template": "./templates/myTheme"
     },
     "theme-default": {
-      "stylesheet": "styles/book.css",
+      "stylesheet": ["styles/book.css"],
       "showLevel": false,
       "icons": {
         "README.md": "fa-regular fa-house",
