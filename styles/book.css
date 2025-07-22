@@ -127,8 +127,187 @@ code {
   font-weight: 600;
   color: #333;
 }
+/* ======================================================= */
+/* ==     FIX V3: PENDEKATAN BRUTE-FORCE ("NUKLIR")     == */
+/* ======================================================= */
 
-/* Tombol Pengaturan Font di Header */
+/* 
+   LANGKAH 1: 
+   Pastikan kontainer .chapter-title berperilaku sebagai flexbox
+   tanpa ada gangguan.
+*/
+.has-children > .chapter-title {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%; /* Pastikan kontainer mengambil lebar penuh */
+    gap: 8px; /* Memberi sedikit jarak aman antar elemen */
+}
+
+/* 
+   LANGKAH 2: 
+   Targetkan elemen judul (link 'a' atau span) dan paksa untuk "mengalah".
+   Ini adalah bagian terpenting.
+*/
+.has-children > .chapter-title > a,
+.has-children > .chapter-title > span:not(.toggle-btn) {
+    /* Izinkan elemen ini untuk menyusut jika ruang sempit */
+    flex-shrink: 1;
+    /* Izinkan elemen ini untuk membesar jika ada ruang lebih */
+    flex-grow: 1;
+
+    /* KUNCI UTAMA, sekarang dengan !important untuk menang */
+    min-width: 0 !important; 
+    
+    /* Pastikan teks di dalamnya bisa turun baris (wrap) */
+    white-space: normal !important; 
+    overflow: visible !important;
+    text-overflow: clip !important; /* Mencegah '...' dari properti ini */
+}
+
+/* 
+   LANGKAH 3:
+   Pastikan ikon panah tidak pernah menyusut atau terdorong.
+*/
+.has-children > .chapter-title > .toggle-btn {
+    flex-shrink: 0; /* Sangat penting: JANGAN biarkan ikon ini menyusut */
+    margin-left: auto; /* Memastikan ia tetap di kanan */
+    padding-left: 5px; /* Sedikit padding agar tidak menempel */
+}/* =================================================================== */
+/* ==   STYLE KARTU UNTUK DAFTAR SUB-HALAMAN (PLUGIN SUMMARY)       == */
+/* =================================================================== */
+
+/* =================================================================== */
+/* ==   FIX FINAL: PAKSA GAYA KARTU PLUGIN DENGAN !IMPORTANT        == */
+/* =================================================================== */
+
+/* --- 1. Kontainer Grid (Mengubah <ul> menjadi Grid) --- */
+/* ============================================= */
+/* ==       KARTU MENU HALAMAN KUSTOM         == */
+/* ============================================= */
+
+/* 1. Wadah Grid */
+/* ==========================================================================
+   CUSTOM CARD STYLES - AUTO THEME SWITCHING
+   ========================================================================== */
+
+/* 1. KONTAINER UTAMA & RESPONSIVE */
+.custom-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .custom-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 2. GAYA DASAR KARTU (Berlaku untuk semua tema) */
+/* === Struktur Umum === */
+
+
+.custom-card {
+  display: flex !important;
+  align-items: center;
+  padding: 14px 16px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.custom-card i {
+  font-size: 16px;
+  margin-right: 12px;
+  width: 20px;
+  text-align: center;
+  transition: color 0.25s ease;
+}
+
+.custom-card::after {
+  content: "›"; /* Unicode U+203A (single right-pointing angle quotation mark) */
+  margin-left: auto;
+  font-size: 18px;
+  color: #999;
+  transition: color 0.25s ease;
+}
+
+
+.custom-card span {
+  color: inherit;
+}
+
+
+/* === THEME 0: LIGHT === */
+.custom-card {
+  background-color: #ffffff;
+  border-color: #e9e9e9;
+  color: #2c3e50 !important;
+}
+
+.custom-card i {
+  color: #555;
+}
+.custom-card::after {
+  color: #cccccc;
+}
+.custom-card:hover {
+  background-color: #f7f7f7;
+  border-color: #cccccc;
+}
+
+
+/* === THEME 1: SEPIA === */
+.book.color-theme-1 .custom-card {
+  background-color: #f9f6f1;
+  border-color: #dcd3c5;
+  color: #5c4b38 !important;
+}
+.book.color-theme-1 .custom-card i {
+  color: #8c7b6a;
+}
+.book.color-theme-1 .custom-card::after {
+  color: #b0a394;
+}
+.book.color-theme-1 .custom-card:hover {
+  background-color: #f3ede6;
+  border-color: #a58d72;
+}
+.book.color-theme-1 .custom-card:hover i,
+.book.color-theme-1 .custom-card:hover::after {
+  color: #5c4b38;
+}
+
+
+/* === THEME 2: DARK === */
+.book.color-theme-2 .custom-card {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #f0f0f0 !important;
+}
+.book.color-theme-2 .custom-card i {
+  color: #bbb;
+}
+.book.color-theme-2 .custom-card::after {
+  color: #666;
+}
+.book.color-theme-2 .custom-card:hover {
+  background-color: #262626;
+  border-color: #3d73dc;
+}
+.book.color-theme-2 .custom-card:hover i,
+.book.color-theme-2 .custom-card:hover::after {
+  color: #d2dfff;
+}
+
+
+
 .book-header .font-settings {
   display: flex;
   align-items: center;
@@ -1696,6 +1875,9 @@ body.without-summary .book-body {
   }
 
   @media (max-width: 768px) {
+    .custom-card-container {
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+  }
     .book-header h1,
     .book-header .title {
       display: none !important;
