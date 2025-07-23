@@ -1,8 +1,3 @@
-/* ==========================================================================
-    1. STRUKTUR DASAR & TIPOGRAFI
-    ========================================================================== */
-
-/* Pastikan Anda menggunakan URL yang menyertakan semua weight yang dibutuhkan: 300, 400, 700 */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 body {
@@ -12,7 +7,7 @@ body {
   color: #2c3e50;
   background-color: #f9f9f9;
   max-width: 1600px;
-  margin-left: 0 auto;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -118,8 +113,8 @@ code {
 
 .book-header {
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   margin: 0 auto;
   width: 100%;
   height: 60px;
@@ -128,10 +123,9 @@ code {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
   z-index: 999;
   color: #000000;
+  max-width: 1600px;
 }
 
 /* Bungkus cover agar bisa dikontrol */
@@ -166,7 +160,7 @@ code {
 }
 
 /* Tampilan judul di header (menimpa default GitBook yang menyembunyikannya) */
-.book-header h1,
+/* .book-header h1,
 .book-header .title {
   opacity: 1 !important;
   visibility: visible !important;
@@ -177,8 +171,8 @@ code {
   font-size: 22px;
   padding: 10px 15px;
   margin: 0;
-  margin-right: auto;
-}
+  margin-right: 0 auto;
+} */
 
 /* Wrapper logo + judul di sidebar */
 .doc-title {
@@ -212,11 +206,11 @@ code {
    tanpa ada gangguan.
 */
 .has-children > .chapter-title {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 100%; /* Pastikan kontainer mengambil lebar penuh */
-    gap: 8px; /* Memberi sedikit jarak aman antar elemen */
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100%; /* Pastikan kontainer mengambil lebar penuh */
+  gap: 8px; /* Memberi sedikit jarak aman antar elemen */
 }
 
 /* 
@@ -226,18 +220,18 @@ code {
 */
 .has-children > .chapter-title > a,
 .has-children > .chapter-title > span:not(.toggle-btn) {
-    /* Izinkan elemen ini untuk menyusut jika ruang sempit */
-    flex-shrink: 1;
-    /* Izinkan elemen ini untuk membesar jika ada ruang lebih */
-    flex-grow: 1;
+  /* Izinkan elemen ini untuk menyusut jika ruang sempit */
+  flex-shrink: 1;
+  /* Izinkan elemen ini untuk membesar jika ada ruang lebih */
+  flex-grow: 1;
 
-    /* KUNCI UTAMA, sekarang dengan !important untuk menang */
-    min-width: 0 !important; 
-    
-    /* Pastikan teks di dalamnya bisa turun baris (wrap) */
-    white-space: normal !important; 
-    overflow: visible !important;
-    text-overflow: clip !important; /* Mencegah '...' dari properti ini */
+  /* KUNCI UTAMA, sekarang dengan !important untuk menang */
+  min-width: 0 !important;
+
+  /* Pastikan teks di dalamnya bisa turun baris (wrap) */
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important; /* Mencegah '...' dari properti ini */
 }
 
 /* 
@@ -245,10 +239,10 @@ code {
    Pastikan ikon panah tidak pernah menyusut atau terdorong.
 */
 .has-children > .chapter-title > .toggle-btn {
-    flex-shrink: 0; /* Sangat penting: JANGAN biarkan ikon ini menyusut */
-    margin-left: auto; /* Memastikan ia tetap di kanan */
-    padding-left: 5px; /* Sedikit padding agar tidak menempel */
-}/* =================================================================== */
+  flex-shrink: 0; /* Sangat penting: JANGAN biarkan ikon ini menyusut */
+  margin-left: auto; /* Memastikan ia tetap di kanan */
+  padding-left: 5px; /* Sedikit padding agar tidak menempel */
+} /* =================================================================== */
 /* ==   STYLE KARTU UNTUK DAFTAR SUB-HALAMAN (PLUGIN SUMMARY)       == */
 /* =================================================================== */
 
@@ -275,10 +269,8 @@ code {
   margin-bottom: 2rem;
 }
 
-
 /* 2. GAYA DASAR KARTU (Berlaku untuk semua tema) */
 /* === Struktur Umum === */
-
 
 .custom-card {
   display: flex !important;
@@ -289,7 +281,8 @@ code {
   font-size: 15px;
   border: 1px solid transparent;
   font-family: "Inter", sans-serif;
-  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  transition: background-color 0.25s ease, border-color 0.25s ease,
+    color 0.25s ease;
 }
 
 .custom-card i {
@@ -308,11 +301,9 @@ code {
   transition: color 0.25s ease;
 }
 
-
 .custom-card span {
   color: inherit;
 }
-
 
 /* === THEME 0: LIGHT === */
 .custom-card {
@@ -332,7 +323,6 @@ code {
   border-color: #3d73dc;
   color: #3d73dc !important;
 }
-
 
 /* === THEME 1: SEPIA === */
 .book.color-theme-1 .custom-card {
@@ -355,7 +345,6 @@ code {
   color: #5c4b38;
 }
 
-
 /* === THEME 2: DARK === */
 .book.color-theme-2 .custom-card {
   background-color: #1e1e1e;
@@ -377,7 +366,18 @@ code {
   color: #d2dfff;
 }
 
-
+.book-header h1,
+.book-header .title {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.5vw; /* Gunakan vw agar menyesuaikan lebar layar */
+  padding: 1vw 2vw; /* Padding fleksibel */
+  margin: 0 auto;
+  text-align: center; /* Tambahan opsional agar tetap di tengah */
+}
 
 .book-header .font-settings {
   display: flex;
@@ -389,7 +389,9 @@ code {
   float: none !important;
   right: 0;
   top: 0;
-  margin-left: auto;
+  margin-right: 1vw;
+  max-width: 100%;
+  font-size: 1.2vw; /* Tambahan agar proporsional */
 }
 
 .book.color-theme-1 .book-header .font-settings {
@@ -536,13 +538,9 @@ button[data-toggle="summary"],
   padding: 1% 1% 0 1%;
   margin-top: 60px;
   margin-right: 0 !important;
-  position: fixed;
+  position: absolute;
   overflow-y: hidden;
   transition: all 0.3s ease;
-  max-width: 300px;
-  width: 100%;
-  left: 0 auto;
-  margin-left: 0 auto !important;
 }
 
 /* Tema Sepia (.color-theme-1) */
@@ -1713,7 +1711,7 @@ body.without-summary .book-body {
 }
 
 .book.color-theme-1 .page-nav-link {
-    border-color: #dcd3c5;
+  border-color: #dcd3c5;
   color: #5c4b38;
   background-color: transparent; /* Atau sesuaikan jika perlu */
 }
@@ -1855,6 +1853,7 @@ body.without-summary .book-body {
   /* Reset posisi summary */
   .book-summary {
     position: fixed !important;
+    margin-top: 0;
     top: 50px;
     left: 0;
     width: 100%;
@@ -2094,162 +2093,8 @@ body.without-summary .book-body {
     color: #000000;
   }
 
-<<<<<<< HEAD
   #page-outline {
     display: none !important;
-=======
-  .page-inner,
-  body {
-    font-size: var(--font-size-base);
-  }
-
-  h1,
-  .h1 {
-    font-size: var(--font-size-h1);
-  }
-
-  h2,
-  .h2 {
-    font-size: var(--font-size-h2);
-  }
-
-  h3,
-  .h3 {
-    font-size: var(--font-size-h3);
-  }
-
-  .book-summary ul.summary li a {
-    font-size: var(--font-size-base);
-  }
-
-  .page-nav-link .nav-title {
-    font-size: var(--font-size-base);
-  }
-
-  .page-nav-link .nav-label {
-    font-size: var(--font-size-small);
-  }
-
-  /* ======================================================= */
-  /* ==     MEDIA QUERY UNTUK LAYOUT (TANPA FONT-SIZE)    == */
-  /* ======================================================= */
-
-  @media (max-width: 900px) {
-    .book-summary {
-      position: static;
-      width: 100%;
-      margin-top: 0;
-      padding: 20px;
-      box-shadow: none;
-      border-top: 1px solid #e0e0e0;
-    }
-    .book-summary ul.summary li a {
-      padding: 15px;
-      /* font-size: 16px; DIHAPUS */
-    }
-    #page-outline {
-      display: none !important;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .custom-card-container {
-    grid-template-columns: 1fr; /* 1 kolom di mobile */
-  }
-    .book-header h1,
-    .book-header .title {
-      display: none !important;
-    }
-    .book-summary {
-      padding: 15px;
-    }
-    .book-summary ul.summary li a {
-      padding: 12px;
-      /* font-size: 15px; DIHAPUS */
-    }
-    .book-summary ul.summary li a:hover {
-      background: #f0efef;
-    }
-    .book-body {
-      padding: 15px;
-      margin-top: 0;
-    }
-
-    /* Aturan layout untuk navigasi bawah */
-    .page-navigation {
-      flex-direction: column;
-      gap: 15px;
-      margin-top: 32px;
-    }
-    .page-nav-link.next {
-      text-align: left;
-    }
-    /* .page-nav-link .nav-title { font-size: 15px; DIHAPUS } */
-  }
-
-  @media (max-width: 480px) {
-    .book-summary {
-      padding: 10px;
-    }
-    .book-summary ul.summary li a {
-      padding: 10px;
-      /* font-size: 14px; DIHAPUS */
-    }
-    .book-body {
-      padding: 10px;
-    }
-
-    /* Aturan layout untuk navigasi bawah */
-    .page-nav-link {
-      padding: 12px 15px;
-    }
-    /* .page-nav-link .nav-label { font-size: 11px; DIHAPUS } */
-    /* .page-nav-link .nav-title { font-size: 14px; DIHAPUS } */
-    .page-nav-link.prev {
-      padding-left: 45px;
-    }
-    .page-nav-link.next {
-      padding-right: 45px;
-    }
-    .page-nav-link.prev::before {
-      left: 15px;
-    }
-    .page-nav-link.next::after {
-      right: 15px;
-    }
-  }
-  /* ============================================= */
-  /* ==   DIAGNOSIS: PAKSA TEKS JADI RESPONSİF  == */
-  /* ============================================= */
-
-  :root {
-    --font-size-base: clamp(0.9rem, 0.8rem + 0.5vw, 1.1rem);
-    --font-size-h1: clamp(1.75rem, 1.5rem + 2vw, 2.75rem);
-    --font-size-h2: clamp(1.5rem, 1.25rem + 1.5vw, 2.25rem);
-    --font-size-h3: clamp(1.25rem, 1.1rem + 1vw, 1.75rem);
-    --font-size-label: clamp(
-      0.8rem,
-      0.75rem + 0.25vw,
-      0.9rem
-    ); /* Sekitar 12.8px - 14.4px */
-  }
-
-  /* KITA TAMBAHKAN !important DI SINI */
-  .page-inner {
-    font-size: var(--font-size-base) !important;
-  }
-
-  .page-inner h1 {
-    font-size: var(--font-size-h1) !important;
-  }
-
-  .page-inner h2 {
-    font-size: var(--font-size-h2) !important;
-  }
-
-  .page-inner h3 {
-    font-size: var(--font-size-h3) !important;
->>>>>>> origin/stylish
   }
 }
 
