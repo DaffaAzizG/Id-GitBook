@@ -1,20 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+/* =================================================================== */
+/* SOLUSI FINAL DAN PASTI: MENARGETKAN SEMUA PEMBUNGKUS SEKALI JALAN   */
+/* Ini akan menimpa gaya latar belakang bawaan dari GitBook.          */
+/* =================================================================== */
+
+/* 1. Untuk Tema Putih (Default / .color-theme-0) */
 
 body {
   font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #2c3e50;
-
-  background-color: #f9f9f9;
-  max-width: 1600px;
-  margin: 0 auto;
-  width: 100%;
+  
+  /* Background color ini akan ditimpa oleh aturan tema Anda (.color-theme-X), jadi tidak masalah */
+  background-color: #f9f9f9; 
+  /* max-width dan margin: 0 auto; sudah dihapus */
 }
 
 .book {
   max-width: 1600px;
-  margin-right: 0 auto;
+  margin-left: auto;   /* <-- Ini cara yang benar untuk centering */
+  margin-right: auto;  /* <-- Ini cara yang benar untuk centering */
+  /* atau bisa disingkat: margin: 0 auto; */
   width: 100%;
 }
 
@@ -207,7 +214,7 @@ code {
   align-items: center;
   z-index: 999;
   color: #000000;
-  max-width: 1600px;
+  max-width: none;
 }
 
 /* Geser konten utama ke bawah agar tidak ketindih */
@@ -617,6 +624,7 @@ button[data-toggle="summary"],
 .book.color-theme-1 .book-summary {
   background: #f4f0e8;
   color: #5b4636;
+  border: none;
 }
 
 /* Tema Dark (.color-theme-2) */
@@ -624,6 +632,7 @@ button[data-toggle="summary"],
   background: #1e1e1e;
   /* color di sini hanya sebagai fallback */
   color: #696969;
+  border: none;
 }
 
 /* --- 2. GAYA TEKS DI DALAM SIDEBAR TEMA GELAP (.color-theme-2) --- */
@@ -2597,3 +2606,25 @@ h3,
 .page-inner h3 {
   font-size: var(--font-size-h3) !important;
 } */
+
+/* ========== THEME 0: WHITE (DEFAULT) ========== */
+/* === THEME 0: WHITE (DEFAULT) === */
+html.color-theme-0, body.color-theme-0 {
+  background: #ffffff;
+}
+
+html.color-theme-1, body.color-theme-1 {
+  background: #fbf5e9;
+}
+
+html.color-theme-2, body.color-theme-2 {
+  background: #1e1e1e;
+}
+
+
+body,
+.book,
+.book-body,
+.book-header {
+    background: inherit !important;
+}
