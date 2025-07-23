@@ -10,7 +10,7 @@ File Manager ini berfungsi sebagai pusat penyimpanan terpusat di Nobox.Ai untuk 
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-#### Mengelola File di File Manager
+## Mengelola File di File Manager
 
 Untuk mempermudah pengelolaan, kalian bisa memanfaatkan fitur pencarian dan penyaringan untuk menemukan file yang dibutuhkan. Jika kalian ingin mengetahui seberapa banyak data yang telah terpakai, **klik pada opsi \[Size All Files]** yang tersedia. Opsi ini akan menampilkan total ukuran semua file yang ada, sehingga memudahkan dalam memantau penggunaan penyimpanan.
 
