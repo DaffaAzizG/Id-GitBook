@@ -38,12 +38,8 @@ Penggunaan Anda atas Layanan yang Tercakup menandakan penerimaan Anda tanpa syar
 
 Jika Anda memiliki pertanyaan tentang Kebijakan Anti-Spam kami, atau jika Anda ingin melaporkan aktivitas spamming oleh salah satu pelanggan kami, silakan hubungi departemen penyalahgunaan kami di:
 
-\
-
-
 **Postal Address**
 
 Ruko Modern Kav A16-A17, Tasikmadu, Kota Malang, Jawa Timur, Indonesia 65143 [http://bit.ly/ubig-malang](https://bit.ly/ubig-malang)
 
 | <p><strong>Email</strong></p><p>suratkita@gmail.com</p> | <p><strong>Telephone</strong></p><p>+6281212122388</p> |
-| ------------------------------------------------------- | ------------------------------------------------------ |

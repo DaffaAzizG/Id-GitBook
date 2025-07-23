@@ -5,6 +5,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #2c3e50;
+  
   background-color: #f9f9f9;
   max-width: 1600px;
   margin: 0 auto;
@@ -28,7 +29,106 @@ body {
   border-top: 1px solid #ccc;
   z-index: 9999;
 }
+/* =================================================================== */
+/* 1. ATURAN DASAR - Bentuk, Lebar, dan Panah Hilang (Untuk semua tema) */
+/* =================================================================== */
 
+/* Scrollbar umum */
+/* Ukuran dan bentuk scrollbar (umum) */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-button {
+  display: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: transparent; /* Awalnya transparan */
+}
+
+/* =========================================================== */
+/* DEFAULT (tanpa class .color-theme-X) - Track selalu muncul  */
+/* =========================================================== */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Saat hover pada seluruh dokumen, munculkan thumb */
+html:hover ::-webkit-scrollbar-thumb {
+  background-color: #999999;
+}
+
+/* Saat hover langsung pada thumb */
+html:hover ::-webkit-scrollbar-thumb:hover {
+  background-color: #666666;
+}
+
+/* Firefox support untuk default */
+
+
+/* =========================================================== */
+/* DARK THEME (.color-theme-2)                                 */
+/* Track & thumb muncul hanya saat hover                       */
+/* =========================================================== */
+.book.color-theme-2 ::-webkit-scrollbar-track {
+  display: none;
+}
+.book.color-theme-2 ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+html.book.color-theme-2:hover ::-webkit-scrollbar-track {
+  display: block;
+  background: #2c2c2c;
+}
+html.book.color-theme-2:hover ::-webkit-scrollbar-thumb {
+  background-color: #686868;
+}
+html.book.color-theme-2:hover ::-webkit-scrollbar-thumb:hover {
+  background-color: #8e8e8e;
+}
+
+/* Firefox fallback */
+body.book.color-theme-2 {
+  scrollbar-color: transparent transparent;
+}
+html.book.color-theme-2:hover body {
+  scrollbar-color: #686868 #2c2c2c;
+}
+
+/* =========================================================== */
+/* SEPIA THEME (.color-theme-1)                                */
+/* =========================================================== */
+.book.color-theme-1 ::-webkit-scrollbar-track {
+  display: none;
+}
+.book.color-theme-1 ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+html.book.color-theme-1:hover ::-webkit-scrollbar-track {
+  display: block;
+  background: #e0d5c4;
+}
+html.book.color-theme-1:hover ::-webkit-scrollbar-thumb {
+  background-color: #a97c50;
+}
+html.book.color-theme-1:hover ::-webkit-scrollbar-thumb:hover {
+  background-color: #946c45;
+}
+
+/* Firefox fallback */
+body.book.color-theme-1 {
+  scrollbar-color: transparent transparent;
+}
+html.book.color-theme-1:hover body {
+  scrollbar-color: #a97c50 #e0d5c4;
+}
+
+/* Firefox: Hanya ganti warna, karena tidak mendukung efek hover */
+body.book.color-theme-1 {
+  scrollbar-color: #a97c50 #e0d5c4; /* thumb-color track-color */
+}
 .book .font-settings .dropdown-caret {
   display: none !important;
 }
@@ -841,6 +941,90 @@ td {
 
 th {
   font-weight: bold;
+}
+.book.color-theme-0 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.book.color-theme-0 th {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.book.color-theme-0 tr:nth-child(odd) td {
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.book.color-theme-0 tr:nth-child(even) td {
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* === THEME 1: Sepia === */
+.book.color-theme-1 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #f4ecd8;
+  color: #5b4636;
+}
+
+.book.color-theme-1 th {
+  font-weight: bold;
+  background-color: #e8dbc4;
+  padding: 10px;
+  border: 1px solid #d6c6ac;
+}
+
+.book.color-theme-1 tr:nth-child(odd) td {
+  background-color: #fdfaf5;
+  border: 1px solid #d6c6ac;
+  padding: 10px;
+}
+
+.book.color-theme-1 tr:nth-child(even) td {
+  background-color: #f1e6d5;
+  border: 1px solid #d6c6ac;
+  padding: 10px;
+}
+
+
+/* === THEME 2: Dark === */
+.book.color-theme-2 table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  background-color: #1e1e1e;
+  color: #ecf0f1;
+}
+
+.book.color-theme-2 th {
+  font-weight: bold;
+  background-color: #2c2c2c;
+  padding: 10px;
+  border: 1px solid #444;
+}
+
+.book.color-theme-2 tr:nth-child(odd) td {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  padding: 10px;
+}
+
+.book.color-theme-2 tr:nth-child(even) td {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  padding: 10px;
 }
 
 blockquote {
