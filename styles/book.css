@@ -45,11 +45,6 @@ h6 {
   font-weight: 600;
 }
 
-.logo-img {
-  height: 32px;
-  width: auto;
-}
-
 a {
   color: #1abc9c;
   text-decoration: none;
@@ -93,18 +88,6 @@ code {
   padding-top: 0 !important;
 }
 
-.cover-container {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.cover {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
 /* Jika di halaman lain nggak ada .cover, dia gak akan tampil ya otomatis */
 
 /* ==========================================================================
@@ -126,25 +109,6 @@ code {
   z-index: 999;
   color: #000000;
   max-width: 1600px;
-}
-
-/* Bungkus cover agar bisa dikontrol */
-.cover-wrapper {
-  position: relative;
-  width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-/* Atur gambar cover agar full width dan tetap proporsional */
-.cover-wrapper img.cover {
-  width: 100%;
-  max-width: 1100px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* Geser konten utama ke bawah agar tidak ketindih */
@@ -374,8 +338,12 @@ code {
   font-weight: bold;
   width: 100%;
   font-size: 1.5vw; /* Gunakan vw agar menyesuaikan lebar layar */
-  padding: 1vw 2vw; /* Padding fleksibel */
-  margin: 0 auto;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px; /* Padding fleksibel */
+  margin-top: 0 auto;
+  margin-bottom: 0 auto;
+  margin-right: 0 auto;
   text-align: center; /* Tambahan opsional agar tetap di tengah */
 }
 
@@ -383,7 +351,7 @@ code {
   display: flex;
   align-items: center;
   color: #333;
-  z-index: 9999;
+  z-index: 2000;
   cursor: pointer;
   position: relative !important;
   float: none !important;
@@ -410,16 +378,19 @@ button[data-toggle="summary"],
   order: 1;
 }
 
-.book-header .title {
+.book-header img {
   order: 2;
+}
+
+.book-header .title {
+  order: 3;
   flex-grow: 1;
   text-align: left;
-  margin-left: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .book-header .font-settings {
-  order: 3;
+  order: 4;
   margin-left: auto;
 }
 
@@ -822,14 +793,29 @@ button[data-toggle="summary"],
   max-height: 100vh;
 }
 
-.cover {
+/* .cover {
   display: block;
   width: 100%;
-  max-width: 100%;
+  max-width: 600px;
   height: auto;
-  margin: 0 auto 20px auto;
-  border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+} */
+
+.cover {
+  top: 0;
+  left: 0; /* Lebar sidebar GitBook biasanya 300px */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 1600px; /* Sisakan area sidebar */
+  height: auto; /* Atur tinggi sesuai gambar */
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.spacer {
+  height: 150px; /* Sama persis dengan tinggi cover */
 }
 
 iframe {
@@ -1179,7 +1165,7 @@ blockquote {
   outline: none;
   transform: scale(1.02);
   border-color: #4ea5f9;
-    box-shadow: 0 4px 14px rgba(78, 165, 249, 0.25) !important;
+  box-shadow: 0 4px 14px rgba(78, 165, 249, 0.25) !important;
 }
 
 /* Wrapper jika menggunakan ikon */
@@ -1218,8 +1204,7 @@ blockquote {
 .book.color-theme-0 .custom-search-box input[type="text"]:focus,
 .book.color-theme-0 .search-box-with-icon input:focus {
   border-color: #4ea5f9;
-    box-shadow: 0 4px 14px rgba(78, 165, 249, 0.25) !important;
-
+  box-shadow: 0 4px 14px rgba(78, 165, 249, 0.25) !important;
 }
 
 .book.color-theme-0 .search-box-with-icon i.fa-search {
@@ -2117,6 +2102,41 @@ body.without-summary .book-body {
     padding: 0 18px;
     z-index: 999;
     color: #000000;
+  }
+}
+
+@media (min-width: 1600px) {
+  .book-header {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Biar elemen geser ke tengah */
+
+    width: 100%;
+    max-width: 1600px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    color: #000000;
+  }
+
+  .btn.pull-left {
+    display: none !important;
+  }
+
+  .book-summary .with-summary {
+    background: #ffffff;
+    color: #34495e;
+    border: none;
+    padding: 1% 1% 0 1%;
+    margin-top: 60px;
+    margin-right: 0 !important;
+    position: absolute;
   }
 }
 @media (max-width: 1440px) {

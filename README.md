@@ -1,7 +1,4 @@
 <!-- README.md -->
-<p class="cover-container">
-  <img src="../image.jpeg" class="cover"/>
-</p>
 
 # <i class="fa-solid fa-hands"></i> Selamat Datang di NoBox.AI
 
