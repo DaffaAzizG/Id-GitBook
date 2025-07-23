@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   color: #2c3e50;
-  
+
   background-color: #f9f9f9;
   max-width: 1600px;
   margin: 0 auto;
@@ -66,7 +66,6 @@ html:hover ::-webkit-scrollbar-thumb:hover {
 }
 
 /* Firefox support untuk default */
-
 
 /* =========================================================== */
 /* DARK THEME (.color-theme-2)                                 */
@@ -997,7 +996,6 @@ th {
   border: 1px solid #d6c6ac;
   padding: 10px;
 }
-
 
 /* === THEME 2: Dark === */
 .book.color-theme-2 table {
@@ -2289,7 +2287,7 @@ body.without-summary .book-body {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1440px) {
   .book-header {
     position: fixed;
     top: 0;
@@ -2309,9 +2307,9 @@ body.without-summary .book-body {
     color: #000000;
   }
 
-  .btn.pull-left {
+  /* .btn.pull-left {
     display: none !important;
-  }
+  } */
 
   .book-summary .with-summary {
     background: #ffffff;
@@ -2323,7 +2321,7 @@ body.without-summary .book-body {
     position: absolute;
   }
 }
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .book-header {
     position: fixed;
     top: 0;
@@ -2358,7 +2356,7 @@ body.without-summary .book-body {
     z-index: 999;
     color: #000000;
   }
-}
+} */
 /* ============================================= */
 /* ==      PENGATURAN TIPOGRAFI RESPONSİF     == */
 /* ==  (Letakkan ini di bagian paling atas)    == */
