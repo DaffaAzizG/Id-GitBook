@@ -192,6 +192,7 @@ code {
 /* Tambahan agar konten di bawahnya tetap terlihat normal */
 .book .book-body .body-inner {
   padding-top: 0 !important;
+  overflow: visible !important;
 }
 
 /* Jika di halaman lain nggak ada .cover, dia gak akan tampil ya otomatis */
@@ -333,7 +334,7 @@ code {
 /* 1. KONTAINER UTAMA & RESPONSIVE */
 .custom-card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2,  1fr);
   gap: 16px;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -1621,6 +1622,7 @@ body.without-summary .book-body {
 #page-outline {
   /* Membuat sidebar menempel di atas saat scroll */
   position: sticky;
+
   top: 0;
   flex-shrink: 0;
   width: 240px;
@@ -1631,6 +1633,7 @@ body.without-summary .book-body {
   background-color: #ffffff; /* Warna background sedikit off-white */
   padding: 16px;
   font-size: 14px;
+  
   transition: background-color 0.3s ease, border-color 0.3s ease; /* Transisi halus untuk ganti tema */
 }
 
@@ -1796,7 +1799,7 @@ body.without-summary .book-body {
 .page-navigation {
   /* Tambahkan padding horizontal untuk 'mendorong' konten ke dalam */
   padding-left: 26px;
-
+flex-direction: column;
   /* Properti lain biarkan sama */
   display: flex;
   justify-content: space-between;
@@ -2120,7 +2123,20 @@ body.without-summary .book-body {
     visibility: visible;
     opacity: 1;
   }
+  .page-navigation {
+    flex-direction: row; /* Kembalikan ke mode baris/horizontal */
+    justify-content: space-between;
+    gap: 20px; /* Jarak bisa sedikit lebih besar di desktop */
+    
+    /* Kembalikan padding-left spesifik Anda untuk alignment di desktop */
+    padding-left: 26px; 
+  }
 
+  .page-nav-link {
+    /* Atur basisnya agar menjadi dua kolom */
+    flex-basis: 48%;
+    width: auto; /* Hapus width 100% dari mobile */
+  }
   .with-summary .book-summary {
     position: fixed;
     top: 50px; /* Sesuaikan dengan tinggi header */
