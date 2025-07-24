@@ -232,6 +232,7 @@ code {
    2. HEADER BUKU (FIXED)
    ========================================================================== */
 
+/* Gaya Dasar (Tema 0 - Putih) */
 .book-header {
   position: fixed;
   left: 0;
@@ -247,6 +248,18 @@ code {
   z-index: 999;
   color: #000000;
   max-width: 1600px;
+}
+
+/* Override untuk Tema 1 (Sepia) */
+.color-theme-1 .book-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #5b4636; /* Warna teks coklat tua */
+}
+
+/* Override untuk Tema 2 (Gelap) */
+.color-theme-2 .book-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e8e8e8; /* Warna teks terang */
 }
 
 /* Geser konten utama ke bawah agar tidak ketindih */
@@ -602,6 +615,7 @@ button[data-toggle="summary"],
 /* 3. PERBAIKAN TOTAL UNTUK TEMA SEPIA (.color-theme-1) */
 .book.color-theme-1 .book-summary {
   overflow-y: auto !important;
+  border: none !important; /* Pastikan tidak ada border yang mengganggu */
 }
 /* Paksa thumb menjadi transparan secara default */
 .book.color-theme-1 .book-summary::-webkit-scrollbar-thumb {
