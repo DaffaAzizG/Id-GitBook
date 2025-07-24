@@ -103,8 +103,6 @@ html.book.color-theme-0:hover body {
   scrollbar-color: #999999 #666666;
 }
 
-
-
 /* =========================================================== */
 /* DARK THEME (.color-theme-2)                                 */
 /* Track & thumb muncul hanya saat hover                       */
@@ -249,9 +247,19 @@ code {
   max-width: 1600px;
 }
 
+.color-theme-1 .book-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: #5b4636;
+}
+
+.color-theme-2 .book-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e8e8e8; /* Warna teks terang */
+}
+
 /* Geser konten utama ke bawah agar tidak ketindih */
 .book .book-body .body-inner {
-  margin-top: 20px; /* atau lebih, jika cover tinggi */
+  /* atau lebih, jika cover tinggi */
   position: relative;
   z-index: 2;
 }
@@ -912,7 +920,7 @@ button[data-toggle="summary"],
    ========================================================================== */
 
 .book-body {
-  margin-top: 60px;
+  margin-top: 30px;
   padding: 24px;
   margin-bottom: 24px;
   background: white;
@@ -2415,6 +2423,12 @@ body.without-summary .book-body {
     width: 300px;
     background: #ffffff;
     z-index: 998;
+  }
+
+  .book.with-summary .book-body {
+    flex-grow: 1;
+    padding: 30px;
+    margin-left: 0px;
   }
 
   .book-body {
