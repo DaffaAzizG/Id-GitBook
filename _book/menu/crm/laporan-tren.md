@@ -8,8 +8,6 @@ Laporan Tren merupakan salah satu menu pada Nobox.Ai yang digunakan untuk menamp
 
 <iframe width="742" height="418" src="https://www.youtube.com/embed/MpRmL4CCpuI/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<iframe width="742" height="418" src="https://www.youtube.com/embed/MpRmL4CCpuI" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 <figure><img src="../../.gitbook/assets/4. Laporan Tren.png" alt=""><figcaption></figcaption></figure>
 
 Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut :

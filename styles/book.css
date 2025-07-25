@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 body {
-  font-family: "Segoe UI", sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #2c3e50;
@@ -394,7 +393,8 @@ body:not(.cover) .cover {
   text-decoration: none !important;
   font-size: 15px;
   border: 1px solid transparent;
-  font-family: "Inter", sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
   transition: background-color 0.25s ease, border-color 0.25s ease,
     color 0.25s ease;
 }
@@ -685,7 +685,8 @@ button[data-toggle="summary"],
 */
 .book.color-theme-2 .book-summary ul.summary li a {
   color: #696969 !important; /* Warna abu-abu yang Anda inginkan */
-  font-family: "Inter", sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
   font-weight: 300 !important; /* 300 adalah 'Light', lebih spesifik dari 'lighter' */
 }
 
@@ -714,9 +715,9 @@ button[data-toggle="summary"],
   display: block;
   text-decoration: none;
   border-radius: 10px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
-  font-family: "Inter", sans-serif;
+ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   width: 100%;
   transition: background 0.3s, color 0.3s;
 }
@@ -731,6 +732,58 @@ button[data-toggle="summary"],
   background: #fdf6e5;
   color: #473223;
   text-decoration: none;
+}
+/* ========== THEME 1 (SEPIA) ========== */
+.book.color-theme-1 .book-summary ul.summary li a {
+  color: #5b4636;
+  padding: 5px 15px;
+  margin: 0 3px;
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: 100%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.book.color-theme-1 .book-summary ul.summary li a:hover {
+  background-color: rgba(91, 70, 54, 0.1);
+  color: #000000;
+}
+
+.book.color-theme-1 .book-summary ul.summary li.active > a {
+  background-color: rgba(91, 70, 54, 0.15);
+  color: #000000;
+  font-weight: 700;
+}
+
+
+/* ========== THEME 2 (DARK) ========== */
+.book.color-theme-2 .book-summary ul.summary li a {
+  color: #696969;
+  padding: 5px 15px;
+  margin: 0 3px;
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  width: 100%;
+  transition: background 0.3s, color 0.3s;
+}
+
+.book.color-theme-2 .book-summary ul.summary li a:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.book.color-theme-2 .book-summary ul.summary li.active > a {
+  background-color: rgba(88, 166, 255, 0.15);
+  color: #58a6ff;
+  font-weight: 700;
 }
 
 /* Style untuk link yang sedang aktif di sidebar */
@@ -749,20 +802,6 @@ button[data-toggle="summary"],
 /* ==   GAYA SIDEBAR UNTUK TEMA SEPIA (.color-theme-1)  == */
 /* ======================================================= */
 
-/* 1. Gaya untuk link biasa (tidak aktif) */
-.book.color-theme-1 .book-summary ul.summary li:not(.active) > a {
-  color: #706156 !important; /* Warna coklat pudar untuk link yang tidak aktif */
-  font-family: "Inter", sans-serif;
-  font-weight: lighter !important;
-}
-
-/* 2. Gaya untuk link biasa saat di-hover */
-.book.color-theme-1 .book-summary ul.summary li:not(.active) > a:hover {
-  color: #6a3f0f !important; /* Gunakan warna aktif untuk hover agar ada progres visual */
-  background: #fef6e5 !important; /* Latar krem yang serasi */
-  border-radius: 8px;
-}
-
 /* 3. Gaya untuk link yang AKTIF (menggunakan warna dari Anda) */
 .book.color-theme-1 .book-summary ul.summary li.active > a,
 .book.color-theme-1 .book-summary .chapter.active > a,
@@ -776,7 +815,8 @@ button[data-toggle="summary"],
     0.6
   ) !important; /* Latar belakang krem yang sedikit transparan agar tidak terlalu mencolok */
   border-radius: 8px;
-  font-family: "Inter", sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
 }
 
 /* 4. Gaya untuk link AKTIF saat di-hover (menggunakan warna dari Anda) */
@@ -1289,7 +1329,7 @@ blockquote {
 .book.color-theme-2 {
   background-color: #1e1e1e !important;
   color: #e0e0e0 !important;
-  font-family: "Segoe UI", "Inter", sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: background-color 0.3s ease;
 }
 
@@ -1380,7 +1420,8 @@ blockquote {
   border-radius: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   transition: all 0.25s ease;
-  font-family: "Segoe UI", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
 }
 
 /* Gaya :focus dasar */
@@ -1471,7 +1512,7 @@ blockquote {
 .book.color-theme-2 {
   background-color: #1e1e1e !important;
   color: #e0e0e0 !important;
-  font-family: "Segoe UI", "Inter", sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: background-color 0.3s ease;
 }
 .book.color-theme-2 .book-body .page-wrapper .page-inner section.normal {
@@ -1504,7 +1545,7 @@ blockquote {
 .book.color-theme-1 {
   background-color: #f4f0e8 !important;
   color: #e0e0e0 !important;
-  font-family: "Segoe UI", "Inter", sans-serif;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   transition: background-color 0.3s ease;
 }
 .book.color-theme-1 .book-body .page-wrapper .page-inner section.normal {
@@ -1518,6 +1559,9 @@ blockquote {
 /* ----------------- SIDEBAR (SUMMARY) - PERBAIKAN ----------------- */
 .book.color-theme-2 .book-summary {
   background: #1e1e1e !important;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+ font-size: 14px ;
+  font-weight: 500 !important;
 }
 
 .book.color-theme-2 .book-summary #book-search-input {
@@ -1531,8 +1575,10 @@ blockquote {
 /* Gaya untuk link yang TIDAK aktif */
 .book.color-theme-2 .book-summary ul.summary li:not(.active) > a {
   color: #696969 !important; /* Warna abu-abu untuk link biasa */
-  font-family: "Inter", sans-serif;
-  font-weight: lighter !important; /* Saya sarankan 400 untuk normal, 300 (light) mungkin terlalu tipis */
+ font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+
+ font-size: 14px ;
+  font-weight: 500 !important;
 }
 
 /* Gaya untuk link saat di-hover (jika tidak aktif) */
@@ -1550,7 +1596,10 @@ blockquote {
   font-weight: bold;
   background: rgba(88, 166, 255, 0.15) !important;
   border-radius: 8px;
-  font-family: "Inter", sans-serif;
+font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+
+   font-size: 14px;
+  font-weight: 700;
 }
 
 /* Gaya untuk judul dokumen di sidebar */
@@ -1697,8 +1746,9 @@ body.without-summary .book-body {
   display: block !important;
   padding: 5px 12px;
   border-radius: 6px;
-  font-family: "Inter", sans-serif;
-  font-size: 13px;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  font-size: 14px;
   font-weight: 500 !important;
   transition: background-color 0.2s ease, color 0.2s ease;
 }

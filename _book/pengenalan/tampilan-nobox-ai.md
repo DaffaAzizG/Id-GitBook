@@ -12,7 +12,7 @@ Pada website NoBox.Ai memiliki beberapa tampilan umum yaitu :
 
 Berisikan ringkasan informasi aktivitas secara real time dan dapat mempermudah Anda untuk mengambil keputusan
 
-<figure><img src="../.gitbook/assets/Dasbor Kirim Pesan (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Dasbor Kirim Pesan (1).png" alt=""><figcaption></figcaption></figure>
 
 Dalam tampilan dasbor terdapat fitur umum yang punya fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut :
 

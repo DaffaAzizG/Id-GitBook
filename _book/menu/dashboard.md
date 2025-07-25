@@ -8,7 +8,7 @@ Ringkasan informasi aktivitas yang berhubungan dengan Nobox.Ai dan dapat memperm
 
 <iframe width="742" height="418" src="https://www.youtube.com/embed/1Zd_Hbak0YQ" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<figure><img src="../.gitbook/assets/Dasbor (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Dasbor.png" alt=""><figcaption></figcaption></figure>
 
 Pada tampilan tersebut, terdapat beberapa bagian yang mempunyai fungsi masing-masing. Penjelasan dari fungsi tersebut adalah sebagai berikut :
 
