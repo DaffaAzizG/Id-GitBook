@@ -2,7 +2,7 @@
 icon: screwdriver-wrench
 ---
 
-# Konfigurasi API Telegram
+# <i class="fa-regular fa-robot"></i> Konfigurasi API Telegram
 
 ## **Pengertian**
 

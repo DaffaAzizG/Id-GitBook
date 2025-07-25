@@ -2,7 +2,7 @@
 icon: tags
 ---
 
-# Tag Perusahaan
+# <i class="fa-regular fa-tags"></i> Tag Perusahaan
 
 Tag Perusahaan adalah salah satu menu pada NoBox.Ai yang digunakan untuk mengelompokkan data produk Anda.
 

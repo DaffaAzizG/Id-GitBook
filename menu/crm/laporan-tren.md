@@ -2,7 +2,7 @@
 icon: arrow-trend-up
 ---
 
-# Laporan Tren
+# <i class="fa-regular fa-chart-line"></i> Laporan Tren
 
 Laporan Tren merupakan salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan yang menganalisis dan menggambarkan tren yang terjadi dalam pengelolaan hubungan dengan pelanggan.
 

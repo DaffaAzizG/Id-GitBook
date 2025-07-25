@@ -2,7 +2,7 @@
 icon: square-xmark
 ---
 
-# Masalah : Tidak Bisa Menambah Account dan Tool
+# <i class="fa-regular fa-exclamation-triangle"></i> Masalah : Tidak Bisa Menambah Account dan Tool
 
 ## **Cara Mengatasi Tidak Bisa Menambah Account dan Tool**
 

@@ -2,7 +2,7 @@
 icon: gauge-min
 ---
 
-# Dasbor Pesan
+# <i class="fa-regular fa-comments"></i> Dasbor Pesan
 
 Menampilkan semua informasi terkait dengan menu Pesan yang dirangkum secara lebih singkat dan beberapa grafik informasi tentang agen.
 

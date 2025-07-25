@@ -2,7 +2,7 @@
 icon: key
 ---
 
-# Lupa Password
+# <i class="fa-regular fa-key"></i> Lupa Password
 
 Fitur ini dapat membantu anda jika anda lupa password saat login website id.nobox.ai caranya sebagai berikut :
 
