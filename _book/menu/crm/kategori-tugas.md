@@ -2,15 +2,11 @@
 icon: layer-group
 ---
 
-# Kategori Tugas
+# <i class="fa-regular fa-th-list"></i> Kategori Tugas
 
 Kategori Tugas merupakan salah satu menu pada Nobox.Ai yang digunakan untuk mengelompokkan data tugas.
 
-<<<<<<< Updated upstream
 <iframe width="742" height="418" src="https://www.youtube.com/embed/y3ffMdfodHs" title="Pengenalan Tampilan NoBox" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-=======
-<iframe width="742" height="418" src="https://www.youtube.com/embed/y3ffMdfodHs/" title="01. Instalasi NoBox Desktop" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
->>>>>>> Stashed changes
 
 ## **Tambah Kategori Tugas**
 

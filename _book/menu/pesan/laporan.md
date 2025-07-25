@@ -2,7 +2,7 @@
 icon: file-chart-column
 ---
 
-# Laporan
+# <i class="fa-regular fa-chart-bar"></i> Laporan
 
 Laporan adalah salah satu menu pada Nobox.Ai yang digunakan untuk menampilkan laporan dari percakapan yang dilakukan.
 
@@ -33,7 +33,7 @@ Berisikan total percakapan terselesaikan, pesan terkirim, dan menetapkan pesan d
 
 <figure><img src="../../.gitbook/assets/Kinerja Agen.png" alt=""><figcaption></figcaption></figure>
 
-### Tag Conversations
+## Tag Conversations
 
 Berisikan data banyak tag yang digunakan dalam bentuk pertanggal yang difilter perbulan dan pada tahun tertentu
 
